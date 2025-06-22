@@ -1,0 +1,50 @@
+{
+  "001": {
+    "title": "Two Sum",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ]
+  },
+  "002": {
+    "title": "Add Two Numbers",
+    "level": "Medium",
+    "tags": [
+      "Linked List",
+      "Math"
+    ]
+  },
+  "021": {
+    "title": "Merge Two Sorted Lists",
+    "level": "Easy",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ]
+  },
+  "023": {
+    "title": "Merge K Sorted Lists",
+    "level": "Hard",
+    "tags": [
+      "Linked List",
+      "Heap",
+      "Divide and Conquer"
+    ]
+  },
+  "206": {
+    "title": "Reverse Linked List",
+    "level": "Easy",
+    "tags": [
+      "Linked List"
+    ]
+  },
+  "019": {
+    "title": "Remove Nth Node From End of List",
+    "level": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ]
+  }
+}
