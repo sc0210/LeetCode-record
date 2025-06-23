@@ -3,6 +3,7 @@
 import json
 from pathlib import Path
 import requests
+from collections import defaultdict
 
 SCRIPT_DIR = Path(__file__).resolve().parent  # tools/
 SOURCE_DIR = SCRIPT_DIR.parent / "source"  # ../source
@@ -77,46 +78,78 @@ def fetch_meta(slug: str) -> dict[str, str | list[str]]:
 # ──────────────────────────────────────────────────────────────
 # 3. 掃描 source/ 產生 README + 動態更新 metadata
 # ──────────────────────────────────────────────────────────────
-files = sorted(p.name for p in SOURCE_DIR.glob("*.c"))
+# --- 在掃描 source/ 產生 README 之前 ---
+files = sorted(p.name for p in SOURCE_DIR.glob("*.*"))
+
+# 先建立題號到檔案語言清單的映射
+
+qid_files = defaultdict(list)  # qid -> list of (language, filename)
 md_path = SCRIPT_DIR / "leetcode_summary.md"
 
 changed = False  # 用來判斷 metadata 有沒有被擴充
 
+for filename in files:
+    parts = filename.split("_", 1)
+    if len(parts) != 2:
+        continue
+    qid = parts[0]
+
+    ext = filename.split(".")[-1].lower()
+    if ext == "c":
+        language = "C"
+    elif ext in ("cpp", "cc"):
+        language = "C++"
+    elif ext == "py":
+        language = "Python"
+    else:
+        language = ext.upper()  # 其他語言可自行擴充
+
+    qid_files[qid].append((language, filename))
+
+# --- 生成 Markdown ---
 with md_path.open("w", encoding="utf-8") as f_md:
-    f_md.write("# LeetCode C 解題總覽\n\n")
-    f_md.write("| 題號 | 題目 | 難易度 | 主題 Tags | 原始碼 | 題目連結 |\n")
+    f_md.write("# LeetCode 解題總覽\n\n")
+    f_md.write("| Number | Tilte | Difficulty | Tags | Solution | Links |\n")
     f_md.write("|------|------|--------|-----------|--------|-----------|\n")
 
-    for filename in files:
-        parts = filename.split("_", 1)
-        if len(parts) != 2:  # 檔名不合規則，略過
-            continue
-
-        qid = parts[0]  # 例：001
-        slug = parts[1].replace(".c", "").replace("_", "-").lower()  # 例：two-sum
+    # 用所有題號鍵排序（可用 qid_files.keys()）
+    for qid in sorted(qid_files.keys()):
+        # 只要取第一個檔名推 slug 即可
+        first_filename = qid_files[qid][0][1]
+        slug = (
+            first_filename.split("_", 1)[1]
+            .replace(".c", "")
+            .replace(".cpp", "")
+            .replace(".cc", "")
+            .replace(".py", "")
+            .replace("_", "-")
+            .lower()
+        )
         link = f"https://leetcode.com/problems/{slug}/"
 
-        if qid not in metadata:  # ✨ 新題目：呼叫 API、寫回 metadata
+        if qid not in metadata:
             obj = fetch_meta(slug)
             metadata[qid] = {
                 "title": obj["title"],
                 "level": obj["difficulty"],
-                "tags": obj["tags"],  # 保留 list
+                "tags": obj["tags"],
             }
             changed = True
 
-        # 取資料（已存在／剛抓到都一樣）
         entry = metadata[qid]
         title = entry["title"]
         level = entry["level"]
         tags = ", ".join(entry["tags"])
 
-        # MD 表格列
-        f_md.write(
-            f"| {qid} | {title} | {level} | {tags} | "
-            f"[{filename}](/source/{filename}) | [🔗 題目]({link}) |\n"
-        )
+        # 產生原始碼欄位多語言超連結
+        source_links = []
+        for lang, fname in qid_files[qid]:
+            source_links.append(f"[{lang}](/source/{fname})")
+        source_md = "<br>".join(source_links)  # Markdown 表格中用 <br> 換行
 
+        f_md.write(
+            f"| {qid} | {title} | {level} | {tags} | {source_md} | [🔗]({link}) |\n"
+        )
 # ──────────────────────────────────────────────────────────────
 # 4. 若有變動就把 metadata 寫回 JSON
 # ──────────────────────────────────────────────────────────────
