@@ -1,5 +1,5 @@
 {
-  "001": {
+  "1": {
     "title": "Two Sum",
     "level": "Easy",
     "tags": [
@@ -7,7 +7,7 @@
       "Hash Table"
     ]
   },
-  "002": {
+  "2": {
     "title": "Add Two Numbers",
     "level": "Medium",
     "tags": [
@@ -15,7 +15,15 @@
       "Math"
     ]
   },
-  "021": {
+  "19": {
+    "title": "Remove Nth Node From End of List",
+    "level": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ]
+  },
+  "21": {
     "title": "Merge Two Sorted Lists",
     "level": "Easy",
     "tags": [
@@ -23,28 +31,66 @@
       "Recursion"
     ]
   },
-  "023": {
-    "title": "Merge K Sorted Lists",
+  "23": {
+    "title": "Merge k Sorted Lists",
     "level": "Hard",
     "tags": [
       "Linked List",
-      "Heap",
-      "Divide and Conquer"
+      "Divide and Conquer",
+      "Heap (Priority Queue)",
+      "Merge Sort"
     ]
   },
-  "206": {
-    "title": "Reverse Linked List",
-    "level": "Easy",
+  "24": {
+    "title": "Swap Nodes in Pairs",
+    "level": "Medium",
     "tags": [
-      "Linked List"
+      "Linked List",
+      "Recursion"
     ]
   },
-  "019": {
-    "title": "Remove Nth Node From End of List",
+  "61": {
+    "title": "Rotate List",
     "level": "Medium",
     "tags": [
       "Linked List",
       "Two Pointers"
+    ]
+  },
+  "86": {
+    "title": "Partition List",
+    "level": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ]
+  },
+  "1394": {
+    "title": "Find Lucky Integer in an Array",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Counting"
+    ]
+  },
+  "3304": {
+    "title": "Find the K-th Character in String Game I",
+    "level": "Easy",
+    "tags": [
+      "Math",
+      "Bit Manipulation",
+      "Recursion",
+      "Simulation"
+    ]
+  },
+  "3307": {
+    "title": "Find the K-th Character in String Game II",
+    "level": "Hard",
+    "tags": [
+      "Math",
+      "Bit Manipulation",
+      "Recursion"
     ]
   }
 }

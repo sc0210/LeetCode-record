@@ -4,10 +4,12 @@ import json
 from pathlib import Path
 import requests
 from collections import defaultdict
+from copy import deepcopy
 
 SCRIPT_DIR = Path(__file__).resolve().parent  # tools/
 SOURCE_DIR = SCRIPT_DIR.parent / "source"  # ../source
 META_PATH = SCRIPT_DIR / "metadata.json"  # tools/metadata.json
+QID_WIDTH = 4  # how many digits to show in the table
 
 # ──────────────────────────────────────────────────────────────
 # 1. 讀取（或初始化）metadata.json
@@ -16,16 +18,24 @@ if META_PATH.exists():
     with META_PATH.open(encoding="utf-8") as jf:
         metadata: dict[str, dict] = json.load(jf)
 else:
-    # ★ 第一次執行：先塞一點範例題目，也可以留空 {}
+    # ★ 第一次執行：可以留空 {} 也可以塞幾筆範例
     metadata = {
-        "001": {"title": "Two Sum", "level": "Easy", "tags": ["Array", "Hash Table"]},
-        "002": {
+        "1": {  # ← 這些預塞的 key 也用「無前導零」型式
+            "title": "Two Sum",
+            "level": "Easy",
+            "tags": ["Array", "Hash Table"],
+        },
+        "2": {
             "title": "Add Two Numbers",
             "level": "Medium",
             "tags": ["Linked List", "Math"],
         },
     }
     META_PATH.write_text(json.dumps(metadata, ensure_ascii=False, indent=2))
+
+# 1‑B. 把舊檔裡「有前導零」的 key 清理掉
+original_metadata = deepcopy(metadata)
+metadata = {k.lstrip("0") or "0": v for k, v in metadata.items()}
 
 
 # ──────────────────────────────────────────────────────────────
@@ -47,14 +57,13 @@ def fetch_meta(slug: str) -> dict[str, str | list[str]]:
     with requests.Session() as s:
         s.get("https://leetcode.com")  # 取 cookie
         csrftoken = s.cookies.get("csrftoken", "")
-
         headers = {
             "Content-Type": "application/json",
             "Referer": f"https://leetcode.com/problems/{slug}/",
             "User-Agent": (
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/114.0.0.0 Safari/537.36"
+                "Chrome/137.0.0.0 Safari/537.36"
             ),
         }
         if csrftoken:
@@ -63,10 +72,11 @@ def fetch_meta(slug: str) -> dict[str, str | list[str]]:
         payload = {"query": query, "variables": variables}
         r = s.post(url, headers=headers, data=json.dumps(payload, ensure_ascii=False))
         r.raise_for_status()
-        data = r.json()["data"]["question"]
+        data = r.json().get("data", {}).get("question")
 
     if not data:
-        raise ValueError(f"找不到題目資料，slug={slug}")
+        print(f"⚠️ 找不到題目資料，slug={slug}，略過 fetch")
+        return None
 
     return {
         "title": data["title"],
@@ -78,80 +88,70 @@ def fetch_meta(slug: str) -> dict[str, str | list[str]]:
 # ──────────────────────────────────────────────────────────────
 # 3. 掃描 source/ 產生 README + 動態更新 metadata
 # ──────────────────────────────────────────────────────────────
-# --- 在掃描 source/ 產生 README 之前 ---
 files = sorted(p.name for p in SOURCE_DIR.glob("*.*"))
 
-# 先建立題號到檔案語言清單的映射
-
-qid_files = defaultdict(list)  # qid -> list of (language, filename)
-md_path = SCRIPT_DIR / "leetcode_summary.md"
-
-changed = False  # 用來判斷 metadata 有沒有被擴充
-
+qid_files: dict[str, list[tuple[str, str]]] = defaultdict(
+    list
+)  # qid -> [(lang, filename)]
 for filename in files:
-    parts = filename.split("_", 1)
-    if len(parts) != 2:
+    if "_" not in filename:  # 不符合「{qid}_{slug}.ext」就跳過
         continue
-    qid = parts[0]
-
+    qid_raw, _ = filename.split("_", 1)
+    qid = qid_raw.lstrip("0") or "0"  # 轉成「無前導零」
     ext = filename.split(".")[-1].lower()
-    if ext == "c":
-        language = "C"
-    elif ext in ("cpp", "cc"):
-        language = "C++"
-    elif ext == "py":
-        language = "Python"
-    else:
-        language = ext.upper()  # 其他語言可自行擴充
-
+    language = (
+        "C"
+        if ext == "c"
+        else "C++" if ext in ("cpp", "cc") else "Python" if ext == "py" else ext.upper()
+    )
     qid_files[qid].append((language, filename))
 
-# --- 生成 Markdown ---
+md_path = SCRIPT_DIR / "leetcode_summary.md"
+changed = metadata != original_metadata  # 若 key 清理就應該重寫 JSON
+
 with md_path.open("w", encoding="utf-8") as f_md:
     f_md.write("# LeetCode 解題總覽\n\n")
-    f_md.write("| Number | Tilte | Difficulty | Tags | Solution | Links |\n")
-    f_md.write("|------|------|--------|-----------|--------|-----------|\n")
+    f_md.write("| Number | Title | Difficulty | Tags | Solution | Link |\n")
+    f_md.write("|-------:|-------|------------|------|----------|------|\n")
 
-    # 用所有題號鍵排序（可用 qid_files.keys()）
-    for qid in sorted(qid_files.keys()):
-        # 只要取第一個檔名推 slug 即可
+    for qid in sorted(qid_files.keys(), key=lambda s: int(s)):
+        qid_display = qid.zfill(QID_WIDTH)  # 0001、0345…
         first_filename = qid_files[qid][0][1]
-        slug = (
-            first_filename.split("_", 1)[1]
-            .replace(".c", "")
-            .replace(".cpp", "")
-            .replace(".cc", "")
-            .replace(".py", "")
-            .replace("_", "-")
-            .lower()
-        )
+        slug = Path(first_filename).stem.split("_", 1)[1].replace("_", "-").lower()
         link = f"https://leetcode.com/problems/{slug}/"
 
         if qid not in metadata:
-            obj = fetch_meta(slug)
-            metadata[qid] = {
-                "title": obj["title"],
-                "level": obj["difficulty"],
-                "tags": obj["tags"],
-            }
+            print(f"📥 fetch meta for Q{qid} ({slug})")
+            meta = fetch_meta(slug)
+            if meta:
+                metadata[qid] = {
+                    "title": meta["title"],
+                    "level": meta["difficulty"],
+                    "tags": meta["tags"],
+                }
+            else:
+                # fallback metadata
+                metadata[qid] = {
+                    "title": "(unavailable)",
+                    "level": "Unknown",
+                    "tags": [],
+                }
             changed = True
 
         entry = metadata[qid]
         title = entry["title"]
         level = entry["level"]
         tags = ", ".join(entry["tags"])
-
-        # 產生原始碼欄位多語言超連結
-        source_links = []
-        for lang, fname in qid_files[qid]:
-            source_links.append(f"[{lang}](/source/{fname})")
-        source_md = "<br>".join(source_links)  # Markdown 表格中用 <br> 換行
+        sources = "<br>".join(
+            f"[{lang}](/source/{fname})" for lang, fname in qid_files[qid]
+        )
 
         f_md.write(
-            f"| {qid} | {title} | {level} | {tags} | {source_md} | [🔗]({link}) |\n"
+            f"| {qid_display} | {title} | {level} | {tags} | {sources} | [🔗]({link}) |\n"
         )
+
 # ──────────────────────────────────────────────────────────────
-# 4. 若有變動就把 metadata 寫回 JSON
+# 4. 若有變動就把 metadata.json 寫回
 # ──────────────────────────────────────────────────────────────
 if changed:
     with META_PATH.open("w", encoding="utf-8") as jf:
