@@ -92,5 +92,27 @@
       "Bit Manipulation",
       "Recursion"
     ]
+  },
+  "703": {
+    "title": "Kth Largest Element in a Stream",
+    "level": "Easy",
+    "tags": [
+      "Tree",
+      "Design",
+      "Binary Search Tree",
+      "Heap (Priority Queue)",
+      "Binary Tree",
+      "Data Stream"
+    ]
+  },
+  "1353": {
+    "title": "Maximum Number of Events That Can Be Attended",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ]
   }
 }
