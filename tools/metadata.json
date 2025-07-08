@@ -155,11 +155,6 @@
       "Bit Manipulation"
     ]
   },
-  "371": {
-    "title": "(unavailable)",
-    "level": "Unknown",
-    "tags": []
-  },
   "260": {
     "title": "Single Number III",
     "level": "Medium",
@@ -174,6 +169,14 @@
     "tags": [
       "Linked List",
       "Recursion"
+    ]
+  },
+  "371": {
+    "title": "Sum of Two Integers",
+    "level": "Medium",
+    "tags": [
+      "Math",
+      "Bit Manipulation"
     ]
   }
 }

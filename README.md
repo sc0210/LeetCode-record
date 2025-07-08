@@ -22,7 +22,7 @@
 | 0231 | Power of Two | Easy | Math, Bit Manipulation, Recursion | [C++](/source/0231_Power_of_Two.cc) | [🔗](https://leetcode.com/problems/power-of-two/) |
 | 0260 | Single Number III | Medium | Array, Bit Manipulation | [C++](/source/0260_Single_Number_III.cc) | [🔗](https://leetcode.com/problems/single-number-iii/) |
 | 0338 | Counting Bits | Easy | Dynamic Programming, Bit Manipulation | [C++](/source/0338_Counting_Bits.cc) | [🔗](https://leetcode.com/problems/counting-bits/) |
-| 0371 | (unavailable) | Unknown |  | [C++](/source/0371_Sum_of_Two_Integer.cc) | [🔗](https://leetcode.com/problems/sum-of-two-integer/) |
+| 0371 | Sum of Two Integers | Medium | Math, Bit Manipulation | [C++](/source/0371_Sum_of_Two_Integers.cc) | [🔗](https://leetcode.com/problems/sum-of-two-integers/) |
 | 0703 | Kth Largest Element in a Stream | Easy | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | [C++](/source/0703_Kth_Largest_Element_in_a_Stream.cc) | [🔗](https://leetcode.com/problems/kth-largest-element-in-a-stream/) |
 | 1353 | Maximum Number of Events That Can Be Attended | Medium | Array, Greedy, Sorting, Heap (Priority Queue) | [C++](/source/1353_Maximum_Number_of_Events_That_Can_Be_Attended.cc) | [🔗](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) |
 | 1394 | Find Lucky Integer in an Array | Easy | Array, Hash Table, Counting | [C++](/source/1394_Find_Lucky_Integer_in_an_Array.cc) | [🔗](https://leetcode.com/problems/find-lucky-integer-in-an-array/) |
