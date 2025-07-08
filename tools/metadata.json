@@ -114,5 +114,66 @@
       "Sorting",
       "Heap (Priority Queue)"
     ]
+  },
+  "136": {
+    "title": "Single Number",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ]
+  },
+  "191": {
+    "title": "Number of 1 Bits",
+    "level": "Easy",
+    "tags": [
+      "Divide and Conquer",
+      "Bit Manipulation"
+    ]
+  },
+  "201": {
+    "title": "Bitwise AND of Numbers Range",
+    "level": "Medium",
+    "tags": [
+      "Bit Manipulation"
+    ]
+  },
+  "231": {
+    "title": "Power of Two",
+    "level": "Easy",
+    "tags": [
+      "Math",
+      "Bit Manipulation",
+      "Recursion"
+    ]
+  },
+  "338": {
+    "title": "Counting Bits",
+    "level": "Easy",
+    "tags": [
+      "Dynamic Programming",
+      "Bit Manipulation"
+    ]
+  },
+  "371": {
+    "title": "(unavailable)",
+    "level": "Unknown",
+    "tags": []
+  },
+  "260": {
+    "title": "Single Number III",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ]
+  },
+  "206": {
+    "title": "Reverse Linked List",
+    "level": "Easy",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ]
   }
 }
