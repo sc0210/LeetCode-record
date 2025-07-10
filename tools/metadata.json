@@ -178,5 +178,58 @@
       "Math",
       "Bit Manipulation"
     ]
+  },
+  "26": {
+    "title": "Remove Duplicates from Sorted Array",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ]
+  },
+  "75": {
+    "title": "Sort Colors",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ]
+  },
+  "167": {
+    "title": "Two Sum II - Input Array Is Sorted",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Binary Search"
+    ]
+  },
+  "234": {
+    "title": "Palindrome Linked List",
+    "level": "Easy",
+    "tags": [
+      "Linked List",
+      "Two Pointers",
+      "Stack",
+      "Recursion"
+    ]
+  },
+  "11": {
+    "title": "Container With Most Water",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Greedy"
+    ]
+  },
+  "283": {
+    "title": "Move Zeroes",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ]
   }
 }
