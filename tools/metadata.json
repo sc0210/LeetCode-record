@@ -231,5 +231,20 @@
       "Array",
       "Two Pointers"
     ]
+  },
+  "1290": {
+    "title": "Convert Binary Number in a Linked List to Integer",
+    "level": "Easy",
+    "tags": [
+      "Linked List",
+      "Math"
+    ]
+  },
+  "3136": {
+    "title": "Valid Word",
+    "level": "Easy",
+    "tags": [
+      "String"
+    ]
   }
 }
