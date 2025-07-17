@@ -338,5 +338,22 @@
       "Union Find",
       "Matrix"
     ]
+  },
+  "141": {
+    "title": "Linked List Cycle",
+    "level": "Easy",
+    "tags": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers"
+    ]
+  },
+  "3201": {
+    "title": "Find the Maximum Length of Valid Subsequence I",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ]
   }
 }

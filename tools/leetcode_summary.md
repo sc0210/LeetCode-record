@@ -5,7 +5,7 @@
 | 0002 | Add Two Numbers | Medium | Linked List, Math | [C](/source/0002_Add_Two_Numbers.c)<br>[C++](/source/0002_Add_Two_Numbers.cc)<br>[Python](/source/0002_Add_Two_Numbers.py) | [🔗](https://leetcode.com/problems/add-two-numbers/) |
 | 0011 | Container With Most Water | Medium | Array, Two Pointers, Greedy | [C](/source/0011_Container_With_Most_Water.c)<br>[C++](/source/0011_Container_With_Most_Water.cc) | [🔗](https://leetcode.com/problems/container-with-most-water/) |
 | 0019 | Remove Nth Node From End of List | Medium | Linked List, Two Pointers | [C](/source/0019_Remove_Nth_Node_From_End_of_List.c) | [🔗](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
-| 0021 | Merge Two Sorted Lists | Easy | Linked List, Recursion | [C](/source/0021_Merge_Two_Sorted_Lists.c) | [🔗](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| 0021 | Merge Two Sorted Lists | Easy | Linked List, Recursion | [C](/source/0021_Merge_Two_Sorted_Lists.c)<br>[C++](/source/0021_Merge_Two_Sorted_Lists.cc) | [🔗](https://leetcode.com/problems/merge-two-sorted-lists/) |
 | 0023 | Merge k Sorted Lists | Hard | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort | [C](/source/0023_Merge_k_Sorted_Lists.c) | [🔗](https://leetcode.com/problems/merge-k-sorted-lists/) |
 | 0024 | Swap Nodes in Pairs | Medium | Linked List, Recursion | [C](/source/0024_Swap_Nodes_in_Pairs.c) | [🔗](https://leetcode.com/problems/swap-nodes-in-pairs/) |
 | 0026 | Remove Duplicates from Sorted Array | Easy | Array, Two Pointers | [C++](/source/0026_Remove_Duplicates_from_Sorted_Array.cc) | [🔗](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
@@ -14,6 +14,7 @@
 | 0086 | Partition List | Medium | Linked List, Two Pointers | [C](/source/0086_Partition_List.c) | [🔗](https://leetcode.com/problems/partition-list/) |
 | 0124 | Binary Tree Maximum Path Sum | Hard | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [C++](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | [🔗](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
 | 0136 | Single Number | Easy | Array, Bit Manipulation | [C++](/source/0136_Single_Number.cc) | [🔗](https://leetcode.com/problems/single-number/) |
+| 0141 | Linked List Cycle | Easy | Hash Table, Linked List, Two Pointers | [C++](/source/0141_Linked_List_Cycle.cc) | [🔗](https://leetcode.com/problems/linked-list-cycle/) |
 | 0167 | Two Sum II - Input Array Is Sorted | Medium | Array, Two Pointers, Binary Search | [C++](/source/0167_Two_Sum_II_Input_Array_is_Sorted.cc) | [🔗](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
 | 0191 | Number of 1 Bits | Easy | Divide and Conquer, Bit Manipulation | [C++](/source/0191_Number_of_1_Bits.cc) | [🔗](https://leetcode.com/problems/number-of-1-bits/) |
 | 0200 | Number of Islands | Medium | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [C++](/source/0200_Number_of_Islands.cc) | [🔗](https://leetcode.com/problems/number-of-islands/) |
@@ -36,6 +37,7 @@
 | 1353 | Maximum Number of Events That Can Be Attended | Medium | Array, Greedy, Sorting, Heap (Priority Queue) | [C++](/source/1353_Maximum_Number_of_Events_That_Can_Be_Attended.cc) | [🔗](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) |
 | 1394 | Find Lucky Integer in an Array | Easy | Array, Hash Table, Counting | [C++](/source/1394_Find_Lucky_Integer_in_an_Array.cc) | [🔗](https://leetcode.com/problems/find-lucky-integer-in-an-array/) |
 | 3136 | Valid Word | Easy | String | [C++](/source/3136_Valid_Word.cc) | [🔗](https://leetcode.com/problems/valid-word/) |
+| 3201 | Find the Maximum Length of Valid Subsequence I | Medium | Array, Dynamic Programming | [C++](/source/3201_Find_the_Maximum_Length_of_Valid_Subsequence_I.cc) | [🔗](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) |
 | 3202 | Find the Maximum Length of Valid Subsequence II | Medium | Array, Dynamic Programming | [C++](/source/3202_Find_the_Maximum_Length_of_Valid_Subsequence_II.cc) | [🔗](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) |
 | 3304 | Find the K-th Character in String Game I | Easy | Math, Bit Manipulation, Recursion, Simulation | [C++](/source/3304_Find_the_K-th_Character_in_String_Game_I.cc) | [🔗](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) |
 | 3307 | Find the K-th Character in String Game II | Hard | Math, Bit Manipulation, Recursion | [C++](/source/3307_Find_the_K-th_Character_in_String_Game_II.cc) | [🔗](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) |
