@@ -246,5 +246,53 @@
     "tags": [
       "String"
     ]
+  },
+  "207": {
+    "title": "Course Schedule",
+    "level": "Medium",
+    "tags": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph",
+      "Topological Sort"
+    ]
+  },
+  "210": {
+    "title": "Course Schedule II",
+    "level": "Medium",
+    "tags": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph",
+      "Topological Sort"
+    ]
+  },
+  "743": {
+    "title": "Network Delay Time",
+    "level": "Medium",
+    "tags": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph",
+      "Heap (Priority Queue)",
+      "Shortest Path"
+    ]
+  },
+  "994": {
+    "title": "Rotting Oranges",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Breadth-First Search",
+      "Matrix"
+    ]
+  },
+  "3202": {
+    "title": "Find the Maximum Length of Valid Subsequence II",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ]
   }
 }
