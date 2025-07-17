@@ -294,5 +294,49 @@
       "Array",
       "Dynamic Programming"
     ]
+  },
+  "124": {
+    "title": "Binary Tree Maximum Path Sum",
+    "level": "Hard",
+    "tags": [
+      "Dynamic Programming",
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "200": {
+    "title": "Number of Islands",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Matrix"
+    ]
+  },
+  "297": {
+    "title": "Serialize and Deserialize Binary Tree",
+    "level": "Hard",
+    "tags": [
+      "String",
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Design",
+      "Binary Tree"
+    ]
+  },
+  "695": {
+    "title": "Max Area of Island",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Matrix"
+    ]
   }
 }

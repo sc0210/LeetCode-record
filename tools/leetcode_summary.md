@@ -12,9 +12,11 @@
 | 0061 | Rotate List | Medium | Linked List, Two Pointers | [C](/source/0061_Rotate_List.c) | [🔗](https://leetcode.com/problems/rotate-list/) |
 | 0075 | Sort Colors | Medium | Array, Two Pointers, Sorting | [C++](/source/0075_Sort_Colors.cc) | [🔗](https://leetcode.com/problems/sort-colors/) |
 | 0086 | Partition List | Medium | Linked List, Two Pointers | [C](/source/0086_Partition_List.c) | [🔗](https://leetcode.com/problems/partition-list/) |
+| 0124 | Binary Tree Maximum Path Sum | Hard | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [C++](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | [🔗](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
 | 0136 | Single Number | Easy | Array, Bit Manipulation | [C++](/source/0136_Single_Number.cc) | [🔗](https://leetcode.com/problems/single-number/) |
 | 0167 | Two Sum II - Input Array Is Sorted | Medium | Array, Two Pointers, Binary Search | [C++](/source/0167_Two_Sum_II_Input_Array_is_Sorted.cc) | [🔗](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
 | 0191 | Number of 1 Bits | Easy | Divide and Conquer, Bit Manipulation | [C++](/source/0191_Number_of_1_Bits.cc) | [🔗](https://leetcode.com/problems/number-of-1-bits/) |
+| 0200 | Number of Islands | Medium | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [C++](/source/0200_Number_of_Islands.cc) | [🔗](https://leetcode.com/problems/number-of-islands/) |
 | 0201 | Bitwise AND of Numbers Range | Medium | Bit Manipulation | [C++](/source/0201_Bitwise_AND_of_Numbers_Range.cc) | [🔗](https://leetcode.com/problems/bitwise-and-of-numbers-range/) |
 | 0206 | Reverse Linked List | Easy | Linked List, Recursion | [C++](/source/0206_Reverse_Linked_List.cc) | [🔗](https://leetcode.com/problems/reverse-linked-list/) |
 | 0207 | Course Schedule | Medium | Depth-First Search, Breadth-First Search, Graph, Topological Sort | [C++](/source/0207_Course_Schedule.cc) | [🔗](https://leetcode.com/problems/course-schedule/) |
@@ -23,8 +25,10 @@
 | 0234 | Palindrome Linked List | Easy | Linked List, Two Pointers, Stack, Recursion | [C++](/source/0234_Palindrome_Linked_list.cc) | [🔗](https://leetcode.com/problems/palindrome-linked-list/) |
 | 0260 | Single Number III | Medium | Array, Bit Manipulation | [C++](/source/0260_Single_Number_III.cc) | [🔗](https://leetcode.com/problems/single-number-iii/) |
 | 0283 | Move Zeroes | Easy | Array, Two Pointers | [C++](/source/0283_Move_Zeroes.cc) | [🔗](https://leetcode.com/problems/move-zeroes/) |
+| 0297 | Serialize and Deserialize Binary Tree | Hard | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree | [C++](/source/0297_Serialize_and_Deserialize_Binary_Tree.cc) | [🔗](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
 | 0338 | Counting Bits | Easy | Dynamic Programming, Bit Manipulation | [C++](/source/0338_Counting_Bits.cc) | [🔗](https://leetcode.com/problems/counting-bits/) |
 | 0371 | Sum of Two Integers | Medium | Math, Bit Manipulation | [C++](/source/0371_Sum_of_Two_Integers.cc) | [🔗](https://leetcode.com/problems/sum-of-two-integers/) |
+| 0695 | Max Area of Island | Medium | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [C++](/source/0695_Max_Area_of_Island.cc) | [🔗](https://leetcode.com/problems/max-area-of-island/) |
 | 0703 | Kth Largest Element in a Stream | Easy | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | [C++](/source/0703_Kth_Largest_Element_in_a_Stream.cc) | [🔗](https://leetcode.com/problems/kth-largest-element-in-a-stream/) |
 | 0743 | Network Delay Time | Medium | Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [C++](/source/0743_Network_Delay_Time.cc) | [🔗](https://leetcode.com/problems/network-delay-time/) |
 | 0994 | Rotting Oranges | Medium | Array, Breadth-First Search, Matrix | [C++](/source/0994_Rotting_Oranges.cc) | [🔗](https://leetcode.com/problems/rotting-oranges/) |
