@@ -1,7 +1,7 @@
 /* 24. Swap Nodes in Pairs */
 #include <stdio.h>
 #include <stdlib.h>
-#include "linklist.h"
+#include "listnode.h"
 
 struct ListNode *swapPairs(struct ListNode *head)
 {

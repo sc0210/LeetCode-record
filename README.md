@@ -10,7 +10,7 @@
 |-------:|-------|------------|------|----------|------|
 | 0002 | Add Two Numbers | Medium | Linked List, Math | [C](/source/0002_Add_Two_Numbers.c)<br>[C++](/source/0002_Add_Two_Numbers.cc)<br>[Python](/source/0002_Add_Two_Numbers.py) | [🔗](https://leetcode.com/problems/add-two-numbers/) |
 | 0011 | Container With Most Water | Medium | Array, Two Pointers, Greedy | [C](/source/0011_Container_With_Most_Water.c)<br>[C++](/source/0011_Container_With_Most_Water.cc) | [🔗](https://leetcode.com/problems/container-with-most-water/) |
-| 0019 | Remove Nth Node From End of List | Medium | Linked List, Two Pointers | [C](/source/0019_Remove_Nth_Node_From_End_of_List.c) | [🔗](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
+| 0019 | Remove Nth Node From End of List | Medium | Linked List, Two Pointers | [C](/source/0019_Remove_Nth_Node_From_End_of_List.c)<br>[C++](/source/0019_Remove_Nth_Node_From_End_of_List.cc) | [🔗](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
 | 0021 | Merge Two Sorted Lists | Easy | Linked List, Recursion | [C](/source/0021_Merge_Two_Sorted_Lists.c)<br>[C++](/source/0021_Merge_Two_Sorted_Lists.cc) | [🔗](https://leetcode.com/problems/merge-two-sorted-lists/) |
 | 0023 | Merge k Sorted Lists | Hard | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort | [C](/source/0023_Merge_k_Sorted_Lists.c) | [🔗](https://leetcode.com/problems/merge-k-sorted-lists/) |
 | 0024 | Swap Nodes in Pairs | Medium | Linked List, Recursion | [C](/source/0024_Swap_Nodes_in_Pairs.c) | [🔗](https://leetcode.com/problems/swap-nodes-in-pairs/) |
@@ -21,22 +21,27 @@
 | 0124 | Binary Tree Maximum Path Sum | Hard | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [C++](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | [🔗](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
 | 0136 | Single Number | Easy | Array, Bit Manipulation | [C++](/source/0136_Single_Number.cc) | [🔗](https://leetcode.com/problems/single-number/) |
 | 0141 | Linked List Cycle | Easy | Hash Table, Linked List, Two Pointers | [C++](/source/0141_Linked_List_Cycle.cc) | [🔗](https://leetcode.com/problems/linked-list-cycle/) |
+| 0143 | Reorder List | Medium | Linked List, Two Pointers, Stack, Recursion | [C++](/source/0143_Reorder_List.cc) | [🔗](https://leetcode.com/problems/reorder-list/) |
 | 0167 | Two Sum II - Input Array Is Sorted | Medium | Array, Two Pointers, Binary Search | [C++](/source/0167_Two_Sum_II_Input_Array_is_Sorted.cc) | [🔗](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
 | 0191 | Number of 1 Bits | Easy | Divide and Conquer, Bit Manipulation | [C++](/source/0191_Number_of_1_Bits.cc) | [🔗](https://leetcode.com/problems/number-of-1-bits/) |
 | 0200 | Number of Islands | Medium | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [C++](/source/0200_Number_of_Islands.cc) | [🔗](https://leetcode.com/problems/number-of-islands/) |
 | 0201 | Bitwise AND of Numbers Range | Medium | Bit Manipulation | [C++](/source/0201_Bitwise_AND_of_Numbers_Range.cc) | [🔗](https://leetcode.com/problems/bitwise-and-of-numbers-range/) |
 | 0206 | Reverse Linked List | Easy | Linked List, Recursion | [C++](/source/0206_Reverse_Linked_List.cc) | [🔗](https://leetcode.com/problems/reverse-linked-list/) |
 | 0207 | Course Schedule | Medium | Depth-First Search, Breadth-First Search, Graph, Topological Sort | [C++](/source/0207_Course_Schedule.cc) | [🔗](https://leetcode.com/problems/course-schedule/) |
+| 0208 | Implement Trie (Prefix Tree) | Medium | Hash Table, String, Design, Trie | [C++](/source/0208_Implement_Trie_Prefix_Tree.cc) | [🔗](https://leetcode.com/problems/implement-trie-prefix-tree/) |
 | 0210 | Course Schedule II | Medium | Depth-First Search, Breadth-First Search, Graph, Topological Sort | [C++](/source/0210_Course_Schedule_II.cc) | [🔗](https://leetcode.com/problems/course-schedule-ii/) |
+| 0211 | Design Add and Search Words Data Structure | Medium | String, Depth-First Search, Design, Trie | [C++](/source/0211_Design_Add_and_Search_Words_Data_Structure.cc) | [🔗](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |
 | 0231 | Power of Two | Easy | Math, Bit Manipulation, Recursion | [C++](/source/0231_Power_of_Two.cc) | [🔗](https://leetcode.com/problems/power-of-two/) |
 | 0234 | Palindrome Linked List | Easy | Linked List, Two Pointers, Stack, Recursion | [C++](/source/0234_Palindrome_Linked_list.cc) | [🔗](https://leetcode.com/problems/palindrome-linked-list/) |
 | 0260 | Single Number III | Medium | Array, Bit Manipulation | [C++](/source/0260_Single_Number_III.cc) | [🔗](https://leetcode.com/problems/single-number-iii/) |
 | 0283 | Move Zeroes | Easy | Array, Two Pointers | [C++](/source/0283_Move_Zeroes.cc) | [🔗](https://leetcode.com/problems/move-zeroes/) |
+| 0287 | Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation | [C++](/source/0287_Find_the_Duplicate_Number.cc) | [🔗](https://leetcode.com/problems/find-the-duplicate-number/) |
 | 0297 | Serialize and Deserialize Binary Tree | Hard | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree | [C++](/source/0297_Serialize_and_Deserialize_Binary_Tree.cc) | [🔗](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
 | 0338 | Counting Bits | Easy | Dynamic Programming, Bit Manipulation | [C++](/source/0338_Counting_Bits.cc) | [🔗](https://leetcode.com/problems/counting-bits/) |
 | 0371 | Sum of Two Integers | Medium | Math, Bit Manipulation | [C++](/source/0371_Sum_of_Two_Integers.cc) | [🔗](https://leetcode.com/problems/sum-of-two-integers/) |
 | 0695 | Max Area of Island | Medium | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [C++](/source/0695_Max_Area_of_Island.cc) | [🔗](https://leetcode.com/problems/max-area-of-island/) |
 | 0703 | Kth Largest Element in a Stream | Easy | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | [C++](/source/0703_Kth_Largest_Element_in_a_Stream.cc) | [🔗](https://leetcode.com/problems/kth-largest-element-in-a-stream/) |
+| 0704 | Binary Search | Easy | Array, Binary Search | [C++](/source/0704_Binary_Search.cc) | [🔗](https://leetcode.com/problems/binary-search/) |
 | 0743 | Network Delay Time | Medium | Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [C++](/source/0743_Network_Delay_Time.cc) | [🔗](https://leetcode.com/problems/network-delay-time/) |
 | 0994 | Rotting Oranges | Medium | Array, Breadth-First Search, Matrix | [C++](/source/0994_Rotting_Oranges.cc) | [🔗](https://leetcode.com/problems/rotting-oranges/) |
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | Linked List, Math | [C++](/source/1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cc) | [🔗](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) |

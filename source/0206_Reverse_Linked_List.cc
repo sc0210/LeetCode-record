@@ -1,8 +1,8 @@
 /* 206. Reverse Linked List */
-#include "linklist.h"
+#include "listnode.h"
 
 /*
-          1    2    3   4   5   
+          1    2    3   4   5
     pre<-cur  nxt
          pre<-cur  nxt
               pre<-cur  nxt
@@ -19,12 +19,12 @@ public:
         ListNode *pre = nullptr;
         ListNode *cur = head;
 
-        
+
 
         while (cur) {
             // preserve nxt node
             ListNode *nxt = cur->next;
-            
+
             // swap
             cur->next = pre;
 

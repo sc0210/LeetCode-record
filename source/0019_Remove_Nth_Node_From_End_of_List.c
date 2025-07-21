@@ -1,7 +1,7 @@
 /* 19. Remove Nth Node from End of List */
 #include <stdio.h>
 #include <stdlib.h>
-#include "linklist.h"
+#include "listnode.h"
 
 struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
 {

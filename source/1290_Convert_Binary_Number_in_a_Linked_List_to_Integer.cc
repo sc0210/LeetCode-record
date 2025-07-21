@@ -1,5 +1,5 @@
-#include"linklist.h"
-#include<math.h>
+#include <math.h>
+#include "listnode.h"
 
 // class Solution {
 // public:
@@ -22,17 +22,21 @@
 //     }
 // };
 
-class Solution {
+class Solution
+{
 public:
-    int getDecimalValue(ListNode* head) {
+    int getDecimalValue(ListNode *head)
+    {
         int res = 0;
-        while(head){
+        while (head) {
             // Add the current ListNode value
             res += head->val;
 
             // When traverse to the last ListNode, return res
-            if(head->next==NULL) break; 
-            else res <<= 1;  
+            if (head->next == NULL)
+                break;
+            else
+                res <<= 1;
 
             // shift to next ListNode
             head = head->next;

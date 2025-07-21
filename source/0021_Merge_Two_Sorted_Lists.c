@@ -1,7 +1,7 @@
 /* 21. Merge Two Sorted Lists */
 #include <stdio.h>
 #include <stdlib.h>
-#include "linklist.h"
+#include "listnode.h"
 
 struct ListNode *mergeTwoLists(struct ListNode *list1, struct ListNode *list2)
 {

@@ -1,7 +1,7 @@
 /*  Definition for singly-linked list. */
 #include <stdio.h>
 #include <stdlib.h>
-#include "linklist.h"
+#include "listnode.h"
 
 /* 23. Merge k Sorted Lists */
 struct ListNode *mergeTwo(struct ListNode *l1, struct ListNode *l2)

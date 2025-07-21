@@ -355,5 +355,53 @@
       "Array",
       "Dynamic Programming"
     ]
+  },
+  "143": {
+    "title": "Reorder List",
+    "level": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers",
+      "Stack",
+      "Recursion"
+    ]
+  },
+  "287": {
+    "title": "Find the Duplicate Number",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Binary Search",
+      "Bit Manipulation"
+    ]
+  },
+  "208": {
+    "title": "Implement Trie (Prefix Tree)",
+    "level": "Medium",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Design",
+      "Trie"
+    ]
+  },
+  "211": {
+    "title": "Design Add and Search Words Data Structure",
+    "level": "Medium",
+    "tags": [
+      "String",
+      "Depth-First Search",
+      "Design",
+      "Trie"
+    ]
+  },
+  "704": {
+    "title": "Binary Search",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ]
   }
 }

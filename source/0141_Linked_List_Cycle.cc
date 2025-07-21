@@ -1,9 +1,11 @@
 /* 141 linked list cycle */
-#include "linklist.h"
+#include "listnode.h"
 
-class Solution {
+class Solution
+{
 public:
-    bool hasCycle(ListNode *head) {
+    bool hasCycle(ListNode *head)
+    {
         // Approach 1
         // Handlde edge case
         // if(head==nullptr) return false;
@@ -12,7 +14,7 @@ public:
         // // At least two node to form cycle
         // ListNode *fast = head->next->next;
         // ListNode *slow = head;
-        
+
         // while(fast->next && fast->next->next){
         //     if(fast->val == slow->val) return true;
         //     else{
@@ -21,14 +23,15 @@ public:
         //     }
         // }
         // return false;
-        
+
         // Approach 2
-        ListNode* fast = head;
-        ListNode* slow = head;
-        while(fast && fast->next){
+        ListNode *fast = head;
+        ListNode *slow = head;
+        while (fast && fast->next) {
             fast = fast->next->next;
             slow = slow->next;
-            if(fast == slow) return true;
+            if (fast == slow)
+                return true;
         }
         return false;
     }

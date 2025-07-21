@@ -1,9 +1,13 @@
 /* 703. Kth Largest Element in a Stream */
 
+#include <queue>
+#include <vector>
+using std::vector;
+
 class KthLargest
 {
 public:
-    priority_queue<int, vector<int>, greater<int>> minHeap;
+    std::priority_queue<int, vector<int>, std::greater<int>> minHeap;
     int K;
 
     KthLargest(int k, vector<int> &nums)
@@ -26,11 +30,3 @@ public:
         return minHeap.top();  // 第 K 大的就是最小堆的 top
     }
 };
-
-
-
-/**
- * Your KthLargest object will be instantiated and called as such:
- * KthLargest* obj = new KthLargest(k, nums);
- * int param_1 = obj->add(val);
- */

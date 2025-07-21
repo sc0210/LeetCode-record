@@ -1,4 +1,8 @@
 /* 1353. Maximum Number of Events That Can Be Attended */
+
+#include <queue>
+#include <vector>
+using std::vector;
 // class Solution {
 // public:
 //     struct greater_than_key{
@@ -94,7 +98,7 @@ public:
         sort(events.begin(), events.end());
 
         // 用 min-heap 儲存可參加的活動（根據 end day）
-        priority_queue<int, vector<int>, greater<int>> pq;
+        std::priority_queue<int, vector<int>, std::greater<int>> pq;
 
         int day = 1;
         int i = 0, n = events.size();

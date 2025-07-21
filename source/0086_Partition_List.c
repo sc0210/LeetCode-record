@@ -1,7 +1,7 @@
 /* 86. Partition List */
 #include <stdio.h>
 #include <stdlib.h>
-#include "linklist.h"
+#include "listnode.h"
 
 struct ListNode *partition(struct ListNode *head, int x)
 {
