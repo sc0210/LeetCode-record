@@ -110,7 +110,7 @@ md_path = SCRIPT_DIR / "leetcode_summary.md"
 changed = metadata != original_metadata  # 若 key 清理就應該重寫 JSON
 
 with md_path.open("w", encoding="utf-8") as f_md:
-    f_md.write("# LeetCode 解題總覽\n\n")
+    # f_md.write("# LeetCode 解題總覽\n\n")
     f_md.write("| Number | Title | Difficulty | Tags | Solution | Link |\n")
     f_md.write("|-------:|-------|------------|------|----------|------|\n")
 
