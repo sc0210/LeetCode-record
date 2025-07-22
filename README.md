@@ -47,6 +47,7 @@
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | Linked List, Math | [C++](/source/1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cc) | [🔗](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) |
 | 1353 | Maximum Number of Events That Can Be Attended | Medium | Array, Greedy, Sorting, Heap (Priority Queue) | [C++](/source/1353_Maximum_Number_of_Events_That_Can_Be_Attended.cc) | [🔗](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) |
 | 1394 | Find Lucky Integer in an Array | Easy | Array, Hash Table, Counting | [C++](/source/1394_Find_Lucky_Integer_in_an_Array.cc) | [🔗](https://leetcode.com/problems/find-lucky-integer-in-an-array/) |
+| 1695 | Maximum Erasure Value | Medium | Array, Hash Table, Sliding Window | [C++](/source/1695_Maximum_Erasure_Value.cc) | [🔗](https://leetcode.com/problems/maximum-erasure-value/) |
 | 3136 | Valid Word | Easy | String | [C++](/source/3136_Valid_Word.cc) | [🔗](https://leetcode.com/problems/valid-word/) |
 | 3201 | Find the Maximum Length of Valid Subsequence I | Medium | Array, Dynamic Programming | [C++](/source/3201_Find_the_Maximum_Length_of_Valid_Subsequence_I.cc) | [🔗](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) |
 | 3202 | Find the Maximum Length of Valid Subsequence II | Medium | Array, Dynamic Programming | [C++](/source/3202_Find_the_Maximum_Length_of_Valid_Subsequence_II.cc) | [🔗](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) |

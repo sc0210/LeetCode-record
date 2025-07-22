@@ -403,5 +403,14 @@
       "Array",
       "Binary Search"
     ]
+  },
+  "1695": {
+    "title": "Maximum Erasure Value",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
+    ]
   }
 }
