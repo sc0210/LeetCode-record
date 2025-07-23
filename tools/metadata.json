@@ -412,5 +412,66 @@
       "Hash Table",
       "Sliding Window"
     ]
+  },
+  "20": {
+    "title": "Valid Parentheses",
+    "level": "Easy",
+    "tags": [
+      "String",
+      "Stack"
+    ]
+  },
+  "678": {
+    "title": "Valid Parenthesis String",
+    "level": "Medium",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Stack",
+      "Greedy"
+    ]
+  },
+  "1717": {
+    "title": "Maximum Score From Removing Substrings",
+    "level": "Medium",
+    "tags": [
+      "String",
+      "Stack",
+      "Greedy"
+    ]
+  },
+  "22": {
+    "title": "Generate Parentheses",
+    "level": "Medium",
+    "tags": [
+      "String",
+      "Dynamic Programming",
+      "Backtracking"
+    ]
+  },
+  "39": {
+    "title": "Combination Sum",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Backtracking"
+    ]
+  },
+  "46": {
+    "title": "Permutations",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Backtracking"
+    ]
+  },
+  "78": {
+    "title": "Subsets",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Backtracking",
+      "Bit Manipulation"
+    ]
   }
 }

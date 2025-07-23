@@ -3,12 +3,17 @@
 | 0002 | Add Two Numbers | Medium | Linked List, Math | [C](/source/0002_Add_Two_Numbers.c)<br>[C++](/source/0002_Add_Two_Numbers.cc)<br>[Python](/source/0002_Add_Two_Numbers.py) | [🔗](https://leetcode.com/problems/add-two-numbers/) |
 | 0011 | Container With Most Water | Medium | Array, Two Pointers, Greedy | [C](/source/0011_Container_With_Most_Water.c)<br>[C++](/source/0011_Container_With_Most_Water.cc) | [🔗](https://leetcode.com/problems/container-with-most-water/) |
 | 0019 | Remove Nth Node From End of List | Medium | Linked List, Two Pointers | [C](/source/0019_Remove_Nth_Node_From_End_of_List.c)<br>[C++](/source/0019_Remove_Nth_Node_From_End_of_List.cc) | [🔗](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
+| 0020 | Valid Parentheses | Easy | String, Stack | [C++](/source/0020_Valid_Parentheses.cc) | [🔗](https://leetcode.com/problems/valid-parentheses/) |
 | 0021 | Merge Two Sorted Lists | Easy | Linked List, Recursion | [C](/source/0021_Merge_Two_Sorted_Lists.c)<br>[C++](/source/0021_Merge_Two_Sorted_Lists.cc) | [🔗](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| 0022 | Generate Parentheses | Medium | String, Dynamic Programming, Backtracking | [C++](/source/0022_Generate_Parentheses.cc) | [🔗](https://leetcode.com/problems/generate-parentheses/) |
 | 0023 | Merge k Sorted Lists | Hard | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort | [C](/source/0023_Merge_k_Sorted_Lists.c) | [🔗](https://leetcode.com/problems/merge-k-sorted-lists/) |
 | 0024 | Swap Nodes in Pairs | Medium | Linked List, Recursion | [C](/source/0024_Swap_Nodes_in_Pairs.c) | [🔗](https://leetcode.com/problems/swap-nodes-in-pairs/) |
 | 0026 | Remove Duplicates from Sorted Array | Easy | Array, Two Pointers | [C++](/source/0026_Remove_Duplicates_from_Sorted_Array.cc) | [🔗](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
+| 0039 | Combination Sum | Medium | Array, Backtracking | [C++](/source/0039_Combination_Sum.cc) | [🔗](https://leetcode.com/problems/combination-sum/) |
+| 0046 | Permutations | Medium | Array, Backtracking | [C++](/source/0046_Permutations.cc) | [🔗](https://leetcode.com/problems/permutations/) |
 | 0061 | Rotate List | Medium | Linked List, Two Pointers | [C](/source/0061_Rotate_List.c) | [🔗](https://leetcode.com/problems/rotate-list/) |
 | 0075 | Sort Colors | Medium | Array, Two Pointers, Sorting | [C++](/source/0075_Sort_Colors.cc) | [🔗](https://leetcode.com/problems/sort-colors/) |
+| 0078 | Subsets | Medium | Array, Backtracking, Bit Manipulation | [C++](/source/0078_Subsets.cc) | [🔗](https://leetcode.com/problems/subsets/) |
 | 0086 | Partition List | Medium | Linked List, Two Pointers | [C](/source/0086_Partition_List.c) | [🔗](https://leetcode.com/problems/partition-list/) |
 | 0124 | Binary Tree Maximum Path Sum | Hard | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [C++](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | [🔗](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
 | 0136 | Single Number | Easy | Array, Bit Manipulation | [C++](/source/0136_Single_Number.cc) | [🔗](https://leetcode.com/problems/single-number/) |
@@ -31,6 +36,7 @@
 | 0297 | Serialize and Deserialize Binary Tree | Hard | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree | [C++](/source/0297_Serialize_and_Deserialize_Binary_Tree.cc) | [🔗](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
 | 0338 | Counting Bits | Easy | Dynamic Programming, Bit Manipulation | [C++](/source/0338_Counting_Bits.cc) | [🔗](https://leetcode.com/problems/counting-bits/) |
 | 0371 | Sum of Two Integers | Medium | Math, Bit Manipulation | [C++](/source/0371_Sum_of_Two_Integers.cc) | [🔗](https://leetcode.com/problems/sum-of-two-integers/) |
+| 0678 | Valid Parenthesis String | Medium | String, Dynamic Programming, Stack, Greedy | [C++](/source/0678_Valid_Parenthesis_String.cc) | [🔗](https://leetcode.com/problems/valid-parenthesis-string/) |
 | 0695 | Max Area of Island | Medium | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [C++](/source/0695_Max_Area_of_Island.cc) | [🔗](https://leetcode.com/problems/max-area-of-island/) |
 | 0703 | Kth Largest Element in a Stream | Easy | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | [C++](/source/0703_Kth_Largest_Element_in_a_Stream.cc) | [🔗](https://leetcode.com/problems/kth-largest-element-in-a-stream/) |
 | 0704 | Binary Search | Easy | Array, Binary Search | [C++](/source/0704_Binary_Search.cc) | [🔗](https://leetcode.com/problems/binary-search/) |
@@ -40,6 +46,7 @@
 | 1353 | Maximum Number of Events That Can Be Attended | Medium | Array, Greedy, Sorting, Heap (Priority Queue) | [C++](/source/1353_Maximum_Number_of_Events_That_Can_Be_Attended.cc) | [🔗](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) |
 | 1394 | Find Lucky Integer in an Array | Easy | Array, Hash Table, Counting | [C++](/source/1394_Find_Lucky_Integer_in_an_Array.cc) | [🔗](https://leetcode.com/problems/find-lucky-integer-in-an-array/) |
 | 1695 | Maximum Erasure Value | Medium | Array, Hash Table, Sliding Window | [C++](/source/1695_Maximum_Erasure_Value.cc) | [🔗](https://leetcode.com/problems/maximum-erasure-value/) |
+| 1717 | Maximum Score From Removing Substrings | Medium | String, Stack, Greedy | [C++](/source/1717_Maximum_Score_From_Removing_Substrings.cc) | [🔗](https://leetcode.com/problems/maximum-score-from-removing-substrings/) |
 | 3136 | Valid Word | Easy | String | [C++](/source/3136_Valid_Word.cc) | [🔗](https://leetcode.com/problems/valid-word/) |
 | 3201 | Find the Maximum Length of Valid Subsequence I | Medium | Array, Dynamic Programming | [C++](/source/3201_Find_the_Maximum_Length_of_Valid_Subsequence_I.cc) | [🔗](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) |
 | 3202 | Find the Maximum Length of Valid Subsequence II | Medium | Array, Dynamic Programming | [C++](/source/3202_Find_the_Maximum_Length_of_Valid_Subsequence_II.cc) | [🔗](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) |
