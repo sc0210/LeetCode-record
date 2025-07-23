@@ -89,7 +89,7 @@ def fetch_meta(slug: str) -> dict[str, str | list[str]]:
 # 3. 掃描 source/ 產生 README + 動態更新 metadata
 # ──────────────────────────────────────────────────────────────
 files = sorted(p.name for p in SOURCE_DIR.glob("*.*"))
-
+CONVERT_LEVEL = {"Easy": "E", "Medium": "M", "Hard": "H"}
 qid_files: dict[str, list[tuple[str, str]]] = defaultdict(
     list
 )  # qid -> [(lang, filename)]
@@ -111,7 +111,7 @@ changed = metadata != original_metadata  # 若 key 清理就應該重寫 JSON
 
 with md_path.open("w", encoding="utf-8") as f_md:
     # f_md.write("# LeetCode 解題總覽\n\n")
-    f_md.write("| Number | Title (LeetCode Link) | Difficulty | Tags | Solution |\n")
+    f_md.write("| Index | Problem (Official LC Link) | Level | Tags | Solution |\n")
     f_md.write("|-------:|-------|------------|------|----------|\n")
 
     for qid in sorted(qid_files.keys(), key=lambda s: int(s)):
@@ -142,7 +142,7 @@ with md_path.open("w", encoding="utf-8") as f_md:
         entry = metadata[qid]
         title = entry["title"]
         title = f"[{title}]({link})"
-        level = entry["level"]
+        level = CONVERT_LEVEL[entry["level"]]
         tags = ", ".join(entry["tags"])
         sources = "<br>".join(
             f"[{lang}](/source/{fname})" for lang, fname in qid_files[qid]
