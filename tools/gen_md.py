@@ -111,11 +111,12 @@ changed = metadata != original_metadata  # 若 key 清理就應該重寫 JSON
 
 with md_path.open("w", encoding="utf-8") as f_md:
     # f_md.write("# LeetCode 解題總覽\n\n")
-    f_md.write("| Number | Title | Difficulty | Tags | Solution | Link |\n")
-    f_md.write("|-------:|-------|------------|------|----------|------|\n")
+    f_md.write("| Number | Title (LeetCode Link) | Difficulty | Tags | Solution |\n")
+    f_md.write("|-------:|-------|------------|------|----------|\n")
 
     for qid in sorted(qid_files.keys(), key=lambda s: int(s)):
-        qid_display = qid.zfill(QID_WIDTH)  # 0001、0345…
+        # qid_display = qid.zfill(QID_WIDTH)  # 0001、0345...
+        qid_display = qid  # 1、2、45...
         first_filename = qid_files[qid][0][1]
         slug = Path(first_filename).stem.split("_", 1)[1].replace("_", "-").lower()
         link = f"https://leetcode.com/problems/{slug}/"
@@ -140,15 +141,14 @@ with md_path.open("w", encoding="utf-8") as f_md:
 
         entry = metadata[qid]
         title = entry["title"]
+        title = f"[{title}]({link})"
         level = entry["level"]
         tags = ", ".join(entry["tags"])
         sources = "<br>".join(
             f"[{lang}](/source/{fname})" for lang, fname in qid_files[qid]
         )
 
-        f_md.write(
-            f"| {qid_display} | {title} | {level} | {tags} | {sources} | [🔗]({link}) |\n"
-        )
+        f_md.write(f"| {qid_display} | {title} | {level} | {tags} | {sources} | \n")
 
 # ──────────────────────────────────────────────────────────────
 # 4. 若有變動就把 metadata.json 寫回
