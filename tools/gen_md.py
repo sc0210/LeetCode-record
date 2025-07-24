@@ -144,8 +144,8 @@ with md_path.open("w", encoding="utf-8") as f_md:
         title = f"[{title}]({link})"
         level = CONVERT_LEVEL[entry["level"]]
         tags = ", ".join(entry["tags"])
-        sources = "<br>".join(
-            f"[{lang}](/source/{fname})" for lang, fname in qid_files[qid]
+        sources = " ".join(
+            f"[[{lang}]](/source/{fname})" for lang, fname in qid_files[qid]
         )
 
         f_md.write(f"| {qid_display} | {title} | {level} | {tags} | {sources} | \n")
