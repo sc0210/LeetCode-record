@@ -10,6 +10,7 @@
 |-------:|-------|------------|------|----------|
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | M | Linked List, Math | [[C]](/source/0002_Add_Two_Numbers.c) [[C++]](/source/0002_Add_Two_Numbers.cc) [[Python]](/source/0002_Add_Two_Numbers.py) | 
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | M | Array, Two Pointers, Greedy | [[C]](/source/0011_Container_With_Most_Water.c) [[C++]](/source/0011_Container_With_Most_Water.cc) | 
+| 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | M | Hash Table, String, Backtracking | [[C++]](/source/0017_Letter_Combinations_of_a_Phone_Number.cc) | 
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | M | Linked List, Two Pointers | [[C]](/source/0019_Remove_Nth_Node_From_End_of_List.c) [[C++]](/source/0019_Remove_Nth_Node_From_End_of_List.cc) | 
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | E | String, Stack | [[C++]](/source/0020_Valid_Parentheses.cc) | 
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | E | Linked List, Recursion | [[C]](/source/0021_Merge_Two_Sorted_Lists.c) [[C++]](/source/0021_Merge_Two_Sorted_Lists.cc) | 
@@ -21,6 +22,7 @@
 | 46 | [Permutations](https://leetcode.com/problems/permutations/) | M | Array, Backtracking | [[C++]](/source/0046_Permutations.cc) | 
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | M | Linked List, Two Pointers | [[C]](/source/0061_Rotate_List.c) | 
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | M | Array, Two Pointers, Sorting | [[C++]](/source/0075_Sort_Colors.cc) | 
+| 77 | [Combinations](https://leetcode.com/problems/combinations/) | M | Backtracking | [[C++]](/source/0077_Combinations.cc) | 
 | 78 | [Subsets](https://leetcode.com/problems/subsets/) | M | Array, Backtracking, Bit Manipulation | [[C++]](/source/0078_Subsets.cc) | 
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | M | Linked List, Two Pointers | [[C]](/source/0086_Partition_List.c) | 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | H | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [[C++]](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | 
