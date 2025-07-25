@@ -12,7 +12,9 @@
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | E | Array, Two Pointers | [[C++]](/source/0026_Remove_Duplicates_from_Sorted_Array.cc) | 
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | M | Array, Backtracking | [[C++]](/source/0039_Combination_Sum.cc) | 
 | 46 | [Permutations](https://leetcode.com/problems/permutations/) | M | Array, Backtracking | [[C++]](/source/0046_Permutations.cc) | 
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | M | Array, Divide and Conquer, Dynamic Programming | [[C++]](/source/0053_Maximum_Subarray.cc) | 
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | M | Linked List, Two Pointers | [[C]](/source/0061_Rotate_List.c) | 
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | E | Math, Dynamic Programming, Memoization | [[C++]](/source/0070_Climbing_Stairs.cc) | 
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | M | Array, Two Pointers, Sorting | [[C++]](/source/0075_Sort_Colors.cc) | 
 | 77 | [Combinations](https://leetcode.com/problems/combinations/) | M | Backtracking | [[C++]](/source/0077_Combinations.cc) | 
 | 78 | [Subsets](https://leetcode.com/problems/subsets/) | M | Array, Backtracking, Bit Manipulation | [[C++]](/source/0078_Subsets.cc) | 
@@ -23,6 +25,7 @@
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | M | Linked List, Two Pointers, Stack, Recursion | [[C++]](/source/0143_Reorder_List.cc) | 
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | M | Array, Two Pointers, Binary Search | [[C++]](/source/0167_Two_Sum_II_Input_Array_is_Sorted.cc) | 
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | E | Divide and Conquer, Bit Manipulation | [[C++]](/source/0191_Number_of_1_Bits.cc) | 
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | M | Array, Dynamic Programming | [[C++]](/source/0198_House_Robber.cc) | 
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | M | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [[C++]](/source/0200_Number_of_Islands.cc) | 
 | 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | M | Bit Manipulation | [[C++]](/source/0201_Bitwise_AND_of_Numbers_Range.cc) | 
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | E | Linked List, Recursion | [[C++]](/source/0206_Reverse_Linked_List.cc) | 

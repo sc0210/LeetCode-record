@@ -29,7 +29,8 @@ public:
             int length = q.size();
             // iterate all the rotten fruit
             for (int i = 0; i < length; i++) {
-                auto [r, c] = q.front();
+                int r = q.front().first;
+                int c = q.front().second;
                 q.pop();
 
                 // check each directions of the rotten fruit

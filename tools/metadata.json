@@ -498,5 +498,31 @@
       "Hash Table",
       "Greedy"
     ]
+  },
+  "53": {
+    "title": "Maximum Subarray",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Divide and Conquer",
+      "Dynamic Programming"
+    ]
+  },
+  "70": {
+    "title": "Climbing Stairs",
+    "level": "Easy",
+    "tags": [
+      "Math",
+      "Dynamic Programming",
+      "Memoization"
+    ]
+  },
+  "198": {
+    "title": "House Robber",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ]
   }
 }
