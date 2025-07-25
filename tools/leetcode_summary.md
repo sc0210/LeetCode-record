@@ -23,6 +23,7 @@
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | E | Array, Bit Manipulation | [[C++]](/source/0136_Single_Number.cc) | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | E | Hash Table, Linked List, Two Pointers | [[C++]](/source/0141_Linked_List_Cycle.cc) | 
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | M | Linked List, Two Pointers, Stack, Recursion | [[C++]](/source/0143_Reorder_List.cc) | 
+| 148 | [Sort List](https://leetcode.com/problems/sort-list/) | M | Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort | [[C]](/source/0148_Sort_List.c) [[C++]](/source/0148_Sort_List.cc) | 
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | M | Array, Two Pointers, Binary Search | [[C++]](/source/0167_Two_Sum_II_Input_Array_is_Sorted.cc) | 
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | E | Divide and Conquer, Bit Manipulation | [[C++]](/source/0191_Number_of_1_Bits.cc) | 
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | M | Array, Dynamic Programming | [[C++]](/source/0198_House_Robber.cc) | 
@@ -45,6 +46,7 @@
 | 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | M | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [[C++]](/source/0695_Max_Area_of_Island.cc) | 
 | 703 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | E | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | [[C++]](/source/0703_Kth_Largest_Element_in_a_Stream.cc) | 
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | E | Array, Binary Search | [[C++]](/source/0704_Binary_Search.cc) | 
+| 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | E | Array, Hash Table, Linked List, Design, Hash Function | [[C++]](/source/0705_Design_HashSet.cc) | 
 | 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | M | Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [[C++]](/source/0743_Network_Delay_Time.cc) | 
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | M | Array, Breadth-First Search, Matrix | [[C++]](/source/0994_Rotting_Oranges.cc) | 
 | 1290 | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | E | Linked List, Math | [[C++]](/source/1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cc) | 
