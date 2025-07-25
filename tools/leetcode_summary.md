@@ -54,3 +54,4 @@
 | 3202 | [Find the Maximum Length of Valid Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) | M | Array, Dynamic Programming | [[C++]](/source/3202_Find_the_Maximum_Length_of_Valid_Subsequence_II.cc) | 
 | 3304 | [Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) | E | Math, Bit Manipulation, Recursion, Simulation | [[C++]](/source/3304_Find_the_K-th_Character_in_String_Game_I.cc) | 
 | 3307 | [Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) | H | Math, Bit Manipulation, Recursion | [[C++]](/source/3307_Find_the_K-th_Character_in_String_Game_II.cc) | 
+| 3487 | [Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | E | Array, Hash Table, Greedy | [[C++]](/source/3487_Maximum_Unique_Subarray_Sum_After_Deletion.cc) | 

@@ -489,5 +489,14 @@
     "tags": [
       "Backtracking"
     ]
+  },
+  "3487": {
+    "title": "Maximum Unique Subarray Sum After Deletion",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Greedy"
+    ]
   }
 }
