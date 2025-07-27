@@ -1,6 +1,7 @@
 | Index | Problem (Official LC Link) | Level | Tags | Solution |
 |-------:|-------|------------|------|----------|
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | M | Linked List, Math | [[C]](/source/0002_Add_Two_Numbers.c) [[C++]](/source/0002_Add_Two_Numbers.cc) [[Python]](/source/0002_Add_Two_Numbers.py) | 
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | M | Hash Table, String, Sliding Window | [[C++]](/source/0003_Longest_Substring_Without_Repeating_Characters.cc) | 
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | M | Array, Two Pointers, Greedy | [[C]](/source/0011_Container_With_Most_Water.c) [[C++]](/source/0011_Container_With_Most_Water.cc) | 
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | M | Hash Table, String, Backtracking | [[C++]](/source/0017_Letter_Combinations_of_a_Phone_Number.cc) | 
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | M | Linked List, Two Pointers | [[C]](/source/0019_Remove_Nth_Node_From_End_of_List.c) [[C++]](/source/0019_Remove_Nth_Node_From_End_of_List.cc) | 
@@ -18,6 +19,8 @@
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | M | Array, Two Pointers, Sorting | [[C++]](/source/0075_Sort_Colors.cc) | 
 | 77 | [Combinations](https://leetcode.com/problems/combinations/) | M | Backtracking | [[C++]](/source/0077_Combinations.cc) | 
 | 78 | [Subsets](https://leetcode.com/problems/subsets/) | M | Array, Backtracking, Bit Manipulation | [[C++]](/source/0078_Subsets.cc) | 
+| 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | M | Linked List, Two Pointers | [[C++]](/source/0082_Remove_Duplicates_from_Sorted_List_II.cc) | 
+| 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | E | Linked List | [[C++]](/source/0083_Remove_Duplicates_from_Sorted_List.cc) | 
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | M | Linked List, Two Pointers | [[C]](/source/0086_Partition_List.c) | 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | H | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [[C++]](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | 
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | E | Array, Bit Manipulation | [[C++]](/source/0136_Single_Number.cc) | 
@@ -29,6 +32,7 @@
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | M | Array, Dynamic Programming | [[C++]](/source/0198_House_Robber.cc) | 
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | M | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [[C++]](/source/0200_Number_of_Islands.cc) | 
 | 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | M | Bit Manipulation | [[C++]](/source/0201_Bitwise_AND_of_Numbers_Range.cc) | 
+| 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | E | Linked List, Recursion | [[C++]](/source/0203_Remove_Linked_List_Elements.cc) | 
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | E | Linked List, Recursion | [[C++]](/source/0206_Reverse_Linked_List.cc) | 
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | M | Depth-First Search, Breadth-First Search, Graph, Topological Sort | [[C++]](/source/0207_Course_Schedule.cc) | 
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | M | Hash Table, String, Design, Trie | [[C++]](/source/0208_Implement_Trie_Prefix_Tree.cc) | 
@@ -42,6 +46,8 @@
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | H | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree | [[C++]](/source/0297_Serialize_and_Deserialize_Binary_Tree.cc) | 
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | E | Dynamic Programming, Bit Manipulation | [[C++]](/source/0338_Counting_Bits.cc) | 
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | M | Math, Bit Manipulation | [[C++]](/source/0371_Sum_of_Two_Integers.cc) | 
+| 424 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | M | Hash Table, String, Sliding Window | [[C++]](/source/0424_Longest_Repeating_Character_Replacement.cc) | 
+| 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | M | Hash Table, Two Pointers, String, Sliding Window | [[C++]](/source/0567_Permutation_in_String.cc) | 
 | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) | M | String, Dynamic Programming, Stack, Greedy | [[C++]](/source/0678_Valid_Parenthesis_String.cc) | 
 | 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | M | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [[C++]](/source/0695_Max_Area_of_Island.cc) | 
 | 703 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | E | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | [[C++]](/source/0703_Kth_Largest_Element_in_a_Stream.cc) | 

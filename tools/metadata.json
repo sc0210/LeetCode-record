@@ -546,5 +546,56 @@
       "Design",
       "Hash Function"
     ]
+  },
+  "3": {
+    "title": "Longest Substring Without Repeating Characters",
+    "level": "Medium",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ]
+  },
+  "424": {
+    "title": "Longest Repeating Character Replacement",
+    "level": "Medium",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ]
+  },
+  "567": {
+    "title": "Permutation in String",
+    "level": "Medium",
+    "tags": [
+      "Hash Table",
+      "Two Pointers",
+      "String",
+      "Sliding Window"
+    ]
+  },
+  "82": {
+    "title": "Remove Duplicates from Sorted List II",
+    "level": "Medium",
+    "tags": [
+      "Linked List",
+      "Two Pointers"
+    ]
+  },
+  "83": {
+    "title": "Remove Duplicates from Sorted List",
+    "level": "Easy",
+    "tags": [
+      "Linked List"
+    ]
+  },
+  "203": {
+    "title": "Remove Linked List Elements",
+    "level": "Easy",
+    "tags": [
+      "Linked List",
+      "Recursion"
+    ]
   }
 }
