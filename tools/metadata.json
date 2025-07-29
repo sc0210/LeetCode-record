@@ -597,5 +597,133 @@
       "Linked List",
       "Recursion"
     ]
+  },
+  "100": {
+    "title": "Same Tree",
+    "level": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "104": {
+    "title": "Maximum Depth of Binary Tree",
+    "level": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "110": {
+    "title": "Balanced Binary Tree",
+    "level": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "133": {
+    "title": "Clone Graph",
+    "level": "Medium",
+    "tags": [
+      "Hash Table",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph"
+    ]
+  },
+  "226": {
+    "title": "Invert Binary Tree",
+    "level": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "543": {
+    "title": "Diameter of Binary Tree",
+    "level": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "572": {
+    "title": "Subtree of Another Tree",
+    "level": "Easy",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "String Matching",
+      "Binary Tree",
+      "Hash Function"
+    ]
+  },
+  "102": {
+    "title": "Binary Tree Level Order Traversal",
+    "level": "Medium",
+    "tags": [
+      "Tree",
+      "Breadth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "235": {
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "level": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree"
+    ]
+  },
+  "199": {
+    "title": "Binary Tree Right Side View",
+    "level": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "1448": {
+    "title": "Count Good Nodes in Binary Tree",
+    "level": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ]
+  },
+  "98": {
+    "title": "Validate Binary Search Tree",
+    "level": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree"
+    ]
+  },
+  "230": {
+    "title": "Kth Smallest Element in a BST",
+    "level": "Medium",
+    "tags": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree"
+    ]
   }
 }
