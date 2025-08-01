@@ -2,7 +2,6 @@
 #include <queue>
 #include <vector>
 
-using std::queue;
 using std::vector;
 
 class Solution
@@ -10,21 +9,31 @@ class Solution
 public:
     bool canFinish(int numCourses, vector<vector<int>> &prerequisites)
     {
-        // initialization(preCurse:adjacent list, inDegree:vector )
         vector<vector<int>> Adj(numCourses);
         vector<int> inDegree(numCourses, 0);
-
-        for (auto item : prerequisites) {
-            int PreCourse = item[1], NextCourse = item[0];
+        /*
+            Initialization (PreCourse: adjacent list, inDegree: vector)
+            PreCourse <- NextCourse, complete PreCourse then NextCourse
+        */
+        for (const auto item : prerequisites) {
+            int PreCourse = item[1];
+            int NextCourse = item[0];
             inDegree[PreCourse]++;
             Adj[NextCourse].emplace_back(PreCourse);
         }
 
-        // queue
-        queue<int> q;
-        for (int i = 0; i < numCourses; i++)
-            if (inDegree[i] == 0)
+
+        /*
+            when inDegree[i]==0 represent finish preCourse,
+            add it into queue,
+        */
+        std::queue<int> q;
+
+        for (int i = 0; i < numCourses; i++) {
+            if (inDegree[i] == 0) {
                 q.push(i);
+            }
+        }
 
         int finish = 0;
         while (!q.empty()) {
@@ -32,7 +41,7 @@ public:
             q.pop();
             finish++;
 
-            for (auto PreCourse : Adj[curCourse]) {
+            for (const auto PreCourse : Adj[curCourse]) {
                 inDegree[PreCourse]--;
                 if (inDegree[PreCourse] == 0)
                     q.push(PreCourse);

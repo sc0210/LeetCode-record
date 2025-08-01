@@ -52,4 +52,20 @@ public:
         }
         return currArea;
     }
+
+    // void dfs(vector<vector<int>> &grid, int r, int c, int &currArea)
+    // {
+    //     // Edge case, not valid step
+    //     if (r < 0 || c < 0 || r >= grid.size() || c >= grid[0].size() ||
+    //         grid[r][c] == 0)
+    //         return;
+
+    //     // valid step, found 1, area+=1
+    //     grid[r][c] = 0;
+    //     currArea++;
+
+    //     for (int i = 0; i < 4; i++) {
+    //         dfs(grid, r + directions[i][0], c + directions[i][1], currArea);
+    //     }
+    // }
 };
