@@ -12,10 +12,10 @@
 
 ## C
 
-1. [const](./Notes/c/C_const.md)
-2. [declartion](./Notes/c/C_declaration.md)
-3. [typedef](./Notes/c/C_typedef.md)
-4. [struct alignment](./Notes/c/C_struct_alignment.md)
+1. [const](./Notes/c/c_const.md)
+2. [declartion](./Notes/c/c_declaration.md)
+3. [typedef](./Notes/c/c_typedef.md)
+4. [struct alignment](./Notes/c/c_struct_alignment.md)
 
 ## 總覽
 
