@@ -725,5 +725,51 @@
       "Binary Search Tree",
       "Binary Tree"
     ]
+  },
+  "787": {
+    "title": "Cheapest Flights Within K Stops",
+    "level": "Medium",
+    "tags": [
+      "Dynamic Programming",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph",
+      "Heap (Priority Queue)",
+      "Shortest Path"
+    ]
+  },
+  "1584": {
+    "title": "Min Cost to Connect All Points",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Union Find",
+      "Graph",
+      "Minimum Spanning Tree"
+    ]
+  },
+  "16": {
+    "title": "3Sum Closest",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ]
+  },
+  "92": {
+    "title": "Reverse Linked List II",
+    "level": "Medium",
+    "tags": [
+      "Linked List"
+    ]
+  },
+  "147": {
+    "title": "Insertion Sort List",
+    "level": "Medium",
+    "tags": [
+      "Linked List",
+      "Sorting"
+    ]
   }
 }

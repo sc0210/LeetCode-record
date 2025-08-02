@@ -2,7 +2,20 @@
 
 ## 快速連結
 
-1. [適合嵌入式/韌體求職者的 LeetCode 刷題清單](./Notes/suggest_problems_for%20embedded.md)
+1. [適合嵌入式/韌體求職者的 LeetCode 刷題清單](./Notes/suggest_problems_for_embedded.md)
+2. [分類問題 (Linklist,Graph)](./Notes/classification_problems.md)
+
+## C++
+
+1. [STL](https://hackmd.io/@ShiYu0318/Cpp_STL)、[STL用法彙整](./Notes/cpp/cpp_stl.md)
+2. [pointer](./Notes/cpp/cpp_pointer.md)
+
+## C
+
+1. [const](./Notes/c/C_const.md)
+2. [declartion](./Notes/c/C_declaration.md)
+3. [typedef](./Notes/c/C_typedef.md)
+4. [struct alignment](./Notes/c/C_struct_alignment.md)
 
 ## 總覽
 
@@ -11,6 +24,7 @@
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | M | Linked List, Math | [[C]](/source/0002_Add_Two_Numbers.c) [[C++]](/source/0002_Add_Two_Numbers.cc) [[Python]](/source/0002_Add_Two_Numbers.py) | 
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | M | Hash Table, String, Sliding Window | [[C++]](/source/0003_Longest_Substring_Without_Repeating_Characters.cc) | 
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | M | Array, Two Pointers, Greedy | [[C]](/source/0011_Container_With_Most_Water.c) [[C++]](/source/0011_Container_With_Most_Water.cc) | 
+| 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | M | Array, Two Pointers, Sorting | [[C++]](/source/0016_3Sum_Closest.cc) | 
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | M | Hash Table, String, Backtracking | [[C++]](/source/0017_Letter_Combinations_of_a_Phone_Number.cc) | 
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | M | Linked List, Two Pointers | [[C]](/source/0019_Remove_Nth_Node_From_End_of_List.c) [[C++]](/source/0019_Remove_Nth_Node_From_End_of_List.cc) | 
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | E | String, Stack | [[C++]](/source/0020_Valid_Parentheses.cc) | 
@@ -30,6 +44,7 @@
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | M | Linked List, Two Pointers | [[C++]](/source/0082_Remove_Duplicates_from_Sorted_List_II.cc) | 
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | E | Linked List | [[C++]](/source/0083_Remove_Duplicates_from_Sorted_List.cc) | 
 | 86 | [Partition List](https://leetcode.com/problems/partition-list/) | M | Linked List, Two Pointers | [[C]](/source/0086_Partition_List.c) | 
+| 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | M | Linked List | [[C++]](/source/0092_Reverse_Linked_List_II.cc) | 
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | M | Tree, Depth-First Search, Binary Search Tree, Binary Tree | [[C++]](/source/0098_Validate_Binary_Search_Tree.cc) | 
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | E | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [[C++]](/source/0100_Same_Tree.cc) | 
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | M | Tree, Breadth-First Search, Binary Tree | [[C++]](/source/0102_Binary_Tree_Level_Order_Traversal.cc) | 
@@ -40,6 +55,7 @@
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | E | Array, Bit Manipulation | [[C++]](/source/0136_Single_Number.cc) | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | E | Hash Table, Linked List, Two Pointers | [[C++]](/source/0141_Linked_List_Cycle.cc) | 
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | M | Linked List, Two Pointers, Stack, Recursion | [[C++]](/source/0143_Reorder_List.cc) | 
+| 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | M | Linked List, Sorting | [[C++]](/source/0147_Insertion_Sort_List.cc) | 
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | M | Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort | [[C]](/source/0148_Sort_List.c) [[C++]](/source/0148_Sort_List.cc) | 
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | M | Array, Two Pointers, Binary Search | [[C++]](/source/0167_Two_Sum_II_Input_Array_is_Sorted.cc) | 
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | E | Divide and Conquer, Bit Manipulation | [[C++]](/source/0191_Number_of_1_Bits.cc) | 
@@ -74,11 +90,13 @@
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | E | Array, Binary Search | [[C++]](/source/0704_Binary_Search.cc) | 
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | E | Array, Hash Table, Linked List, Design, Hash Function | [[C++]](/source/0705_Design_HashSet.cc) | 
 | 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | M | Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [[C++]](/source/0743_Network_Delay_Time.cc) | 
+| 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | M | Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [[C++]](/source/0787_Cheapest_Flights_Within_K_Stops.cc) | 
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | M | Array, Breadth-First Search, Matrix | [[C++]](/source/0994_Rotting_Oranges.cc) | 
 | 1290 | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | E | Linked List, Math | [[C++]](/source/1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cc) | 
 | 1353 | [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) | M | Array, Greedy, Sorting, Heap (Priority Queue) | [[C++]](/source/1353_Maximum_Number_of_Events_That_Can_Be_Attended.cc) | 
 | 1394 | [Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | E | Array, Hash Table, Counting | [[C++]](/source/1394_Find_Lucky_Integer_in_an_Array.cc) | 
 | 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | M | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [[C++]](/source/1448_Count_Good_Nodes_in_Binary_Tree.cc) | 
+| 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | M | Array, Union Find, Graph, Minimum Spanning Tree | [[C++]](/source/1584_Min_Cost_to_Connect_All_Points.cc) | 
 | 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | M | Array, Hash Table, Sliding Window | [[C++]](/source/1695_Maximum_Erasure_Value.cc) | 
 | 1717 | [Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/) | M | String, Stack, Greedy | [[C++]](/source/1717_Maximum_Score_From_Removing_Substrings.cc) | 
 | 3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | E | String | [[C++]](/source/3136_Valid_Word.cc) | 
