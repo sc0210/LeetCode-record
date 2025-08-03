@@ -3,6 +3,7 @@
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | M | Linked List, Math | [[C]](/source/0002_Add_Two_Numbers.c) [[C++]](/source/0002_Add_Two_Numbers.cc) [[Python]](/source/0002_Add_Two_Numbers.py) | 
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | M | Hash Table, String, Sliding Window | [[C++]](/source/0003_Longest_Substring_Without_Repeating_Characters.cc) | 
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | M | Array, Two Pointers, Greedy | [[C]](/source/0011_Container_With_Most_Water.c) [[C++]](/source/0011_Container_With_Most_Water.cc) | 
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | E | Array, String, Trie | [[C++]](/source/0014_Longest_Common_Prefix.cc) | 
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | M | Array, Two Pointers, Sorting | [[C++]](/source/0016_3Sum_Closest.cc) | 
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | M | Hash Table, String, Backtracking | [[C++]](/source/0017_Letter_Combinations_of_a_Phone_Number.cc) | 
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | M | Linked List, Two Pointers | [[C]](/source/0019_Remove_Nth_Node_From_End_of_List.c) [[C++]](/source/0019_Remove_Nth_Node_From_End_of_List.cc) | 
@@ -12,6 +13,7 @@
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | H | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort | [[C]](/source/0023_Merge_k_Sorted_Lists.c) | 
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | M | Linked List, Recursion | [[C]](/source/0024_Swap_Nodes_in_Pairs.c) | 
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | E | Array, Two Pointers | [[C++]](/source/0026_Remove_Duplicates_from_Sorted_Array.cc) | 
+| 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | E | Two Pointers, String, String Matching | [[C++]](/source/0028_Find_the_Index_of_the_First_Occurrence_in_a_String.cc) | 
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | M | Array, Backtracking | [[C++]](/source/0039_Combination_Sum.cc) | 
 | 46 | [Permutations](https://leetcode.com/problems/permutations/) | M | Array, Backtracking | [[C++]](/source/0046_Permutations.cc) | 
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | M | Array, Divide and Conquer, Dynamic Programming | [[C++]](/source/0053_Maximum_Subarray.cc) | 
@@ -30,6 +32,7 @@
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | E | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [[C++]](/source/0104_Maximum_Depth_of_Binary_Tree.cc) | 
 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | E | Tree, Depth-First Search, Binary Tree | [[C++]](/source/0110_Balanced_Binary_Tree.cc) | 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | H | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [[C++]](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | 
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | E | Two Pointers, String | [[C++]](/source/0125_Valid_Palindrome.cc) | 
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | M | Hash Table, Depth-First Search, Breadth-First Search, Graph | [[C++]](/source/0133_Clone_Graph.cc) | 
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | E | Array, Bit Manipulation | [[C++]](/source/0136_Single_Number.cc) | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | E | Hash Table, Linked List, Two Pointers | [[C++]](/source/0141_Linked_List_Cycle.cc) | 
@@ -53,6 +56,7 @@
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | E | Math, Bit Manipulation, Recursion | [[C++]](/source/0231_Power_of_Two.cc) | 
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | E | Linked List, Two Pointers, Stack, Recursion | [[C++]](/source/0234_Palindrome_Linked_list.cc) | 
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | M | Tree, Depth-First Search, Binary Search Tree, Binary Tree | [[C++]](/source/0235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cc) | 
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | E | Hash Table, String, Sorting | [[C++]](/source/0242_Valid_Anagram.cc) | 
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | M | Array, Bit Manipulation | [[C++]](/source/0260_Single_Number_III.cc) | 
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | E | Array, Two Pointers | [[C++]](/source/0283_Move_Zeroes.cc) | 
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | M | Array, Two Pointers, Binary Search, Bit Manipulation | [[C++]](/source/0287_Find_the_Duplicate_Number.cc) | 
