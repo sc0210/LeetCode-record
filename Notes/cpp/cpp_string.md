@@ -160,11 +160,6 @@ for (char c : s) freq[c]++;
 | Minimum Window Substring     | 76   | sliding window | [🔗](https://leetcode.com/problems/minimum-window-substring/)                           | `string minWindow(string s, string t)`             |
 | Longest Substring w/o Repeat | 3    | sliding window | [🔗](https://leetcode.com/problems/longest-substring-without-repeating-characters/)     | `int lengthOfLongestSubstring(string s)`           |
 
-📚 LeetCode 題單推薦：
-
-* [🔥 字串技巧刷題清單 (LeetCode curated)](https://leetcode.com/problem-list/top-interview-questions/) → 可手動建立個人題單標記常見字串類型
-
----
 
 ## 6. 附錄
 
