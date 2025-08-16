@@ -793,6 +793,40 @@
     "level": "Easy",
     "tags": [
       "String"
+    ],
+  "14": {
+    "title": "Longest Common Prefix",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "String",
+      "Trie"
+    ]
+  },
+  "28": {
+    "title": "Find the Index of the First Occurrence in a String",
+    "level": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String",
+      "String Matching"
+    ]
+  },
+  "125": {
+    "title": "Valid Palindrome",
+    "level": "Easy",
+    "tags": [
+      "Two Pointers",
+      "String"
+    ]
+  },
+  "242": {
+    "title": "Valid Anagram",
+    "level": "Easy",
+    "tags": [
+      "Hash Table",
+      "String",
+      "Sorting"
     ]
   }
 }
