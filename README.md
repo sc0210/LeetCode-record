@@ -50,6 +50,7 @@
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | M | Tree, Breadth-First Search, Binary Tree | [[C++]](/source/0102_Binary_Tree_Level_Order_Traversal.cc) | 
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | E | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [[C++]](/source/0104_Maximum_Depth_of_Binary_Tree.cc) | 
 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | E | Tree, Depth-First Search, Binary Tree | [[C++]](/source/0110_Balanced_Binary_Tree.cc) | 
+| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | E | Array, Dynamic Programming | [[C++]](/source/0118_Pascals_Triangle.cc) | 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | H | Dynamic Programming, Tree, Depth-First Search, Binary Tree | [[C++]](/source/0124_Binary_Tree_Maximum_Path_Sum.cc) | 
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | M | Hash Table, Depth-First Search, Breadth-First Search, Graph | [[C++]](/source/0133_Clone_Graph.cc) | 
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | E | Array, Bit Manipulation | [[C++]](/source/0136_Single_Number.cc) | 
@@ -93,12 +94,14 @@
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | M | Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [[C++]](/source/0787_Cheapest_Flights_Within_K_Stops.cc) | 
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | M | Array, Breadth-First Search, Matrix | [[C++]](/source/0994_Rotting_Oranges.cc) | 
 | 1290 | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | E | Linked List, Math | [[C++]](/source/1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cc) | 
+| 1323 | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/) | E | Math, Greedy | [[C++]](/source/1323_Maximum_69_Number.cc) | 
 | 1353 | [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) | M | Array, Greedy, Sorting, Heap (Priority Queue) | [[C++]](/source/1353_Maximum_Number_of_Events_That_Can_Be_Attended.cc) | 
 | 1394 | [Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | E | Array, Hash Table, Counting | [[C++]](/source/1394_Find_Lucky_Integer_in_an_Array.cc) | 
 | 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | M | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [[C++]](/source/1448_Count_Good_Nodes_in_Binary_Tree.cc) | 
 | 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | M | Array, Union Find, Graph, Minimum Spanning Tree | [[C++]](/source/1584_Min_Cost_to_Connect_All_Points.cc) | 
 | 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | M | Array, Hash Table, Sliding Window | [[C++]](/source/1695_Maximum_Erasure_Value.cc) | 
 | 1717 | [Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/) | M | String, Stack, Greedy | [[C++]](/source/1717_Maximum_Score_From_Removing_Substrings.cc) | 
+| 2264 | [Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/) | E | String | [[C++]](/source/2264_Largest_3_Same_Digit_Number_in_String.cc) | 
 | 3136 | [Valid Word](https://leetcode.com/problems/valid-word/) | E | String | [[C++]](/source/3136_Valid_Word.cc) | 
 | 3201 | [Find the Maximum Length of Valid Subsequence I](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) | M | Array, Dynamic Programming | [[C++]](/source/3201_Find_the_Maximum_Length_of_Valid_Subsequence_I.cc) | 
 | 3202 | [Find the Maximum Length of Valid Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) | M | Array, Dynamic Programming | [[C++]](/source/3202_Find_the_Maximum_Length_of_Valid_Subsequence_II.cc) | 

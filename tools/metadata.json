@@ -771,5 +771,28 @@
       "Linked List",
       "Sorting"
     ]
+  },
+  "118": {
+    "title": "Pascal's Triangle",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ]
+  },
+  "1323": {
+    "title": "Maximum 69 Number",
+    "level": "Easy",
+    "tags": [
+      "Math",
+      "Greedy"
+    ]
+  },
+  "2264": {
+    "title": "Largest 3-Same-Digit Number in String",
+    "level": "Easy",
+    "tags": [
+      "String"
+    ]
   }
 }
