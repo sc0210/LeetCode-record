@@ -8,22 +8,29 @@ Backtracking 是一種遞迴策略，用於解決所有可能組合的問題（�
 ## 📌 解題通用模板
 
 ```cpp
-void backtrack(參數1, 參數2, ...) {
-    if (終止條件成立) {
-        保存結果;
-        return;
+bool backtrack(參數1, 參數2, ...) {
+    // 1. Base case: check if we found a solution
+    if (solutionFound(state, step)) {
+        recordSolution(state);
+        return true/false; // depending on problem
     }
 
-    for (可能的選擇 : 所有選項集合) {
-        // 做選擇
-        修改狀態;
+    // 2. Iterate over all choices
+    for (choice in allChoices) {
+        if (isValid(choice, state)) {
+            // 2.1 Make the choice
+            makeChoice(state, choice);
 
-        // 遞迴探索
-        backtrack(更新後的參數);
+            // 2.2 Recurse 遞迴檢查其他可能
+            if (backtrack(state, step+1, ...)) {
+                // sometimes return true immediately if only one solution is needed
+            }
 
-        // 撤銷選擇（回溯）
-        恢復狀態;
+            // 2.3 Undo the choice (backtrack) 回溯
+            undoChoice(state, choice);
+        }
     }
+    return false; // no solution found in this branch
 }
 ```
 
@@ -52,7 +59,7 @@ void backtrack(string path, int left, int right, int n) {
 
 ### 2. 子集（Subsets）
 
-- 題號：[LeetCode 78. Subsets](https://leetcode.com/problems/subsets/description/)
+- 題號：[LeetCode 78. Subsets](https://leetcode.com/problems/subsets/)
 - 類型：組合（每個元素選或不選）
 
 ```cpp
@@ -70,7 +77,7 @@ void backtrack(vector<int>& nums, int start, vector<int>& path) {
 
 ### 3. 排列（Permutations）
 
-- 題號：[LeetCode 46. Permutations](https://leetcode.com/problems/permutations/description/)
+- 題號：[LeetCode 46. Permutations](https://leetcode.com/problems/permutations/)
 - 類型：全排列 + 訪問控制
 
 ```cpp
@@ -94,7 +101,7 @@ void backtrack(vector<int>& nums, vector<bool>& used, vector<int>& path) {
 
 ### 4. 組合總和（Combination Sum）
 
-- 題號：[LeetCode 39. Combination Sum](https://leetcode.com/problems/combination-sum/description/)
+- 題號：[LeetCode 39. Combination Sum](https://leetcode.com/problems/combination-sum/)
 - 類型：組合 + 剪枝
 
 ```cpp
@@ -116,7 +123,7 @@ void backtrack(vector<int>& candidates, int target, int start, vector<int>& path
 
 ### 5. N 皇后（N-Queens）
 
-- 題號：[LeetCode 51. N-Queens](https://leetcode.com/problems/n-queens/description/)
+- 題號：[LeetCode 51. N-Queens](https://leetcode.com/problems/n-queens/)
 - 類型：排列 + 合法性檢查
 
 ```cpp
@@ -147,16 +154,42 @@ void backtrack(vector<string>& board, int row, int n) {
 }
 ```
 
+### 6. 單詞搜尋（Word Search）
+
+- 題號：[LeetCode 79. Word Search](https://leetcode.com/problems/word-search/)
+- 類型：DFS + 回溯 + 網格搜尋
+
+```cpp
+bool dfs(vector<vector<char>>& board, string& word, int r, int c, int i) {
+    if (i == word.size()) return true;
+    if (r < 0 || c < 0 || r >= board.size() || c >= board[0].size() || board[r][c] != word[i])
+        return false;
+
+    char tmp = board[r][c];
+    board[r][c] = '#'; // 標記為已訪問
+
+    bool found = dfs(board, word, r+1, c, i+1) ||
+                 dfs(board, word, r-1, c, i+1) ||
+                 dfs(board, word, r, c+1, i+1) ||
+                 dfs(board, word, r, c-1, i+1);
+
+    board[r][c] = tmp; // 回溯，恢復狀態
+    return found;
+}
+```
+
 ---
 
 ## 🧠 解題技巧總結
 
-| 技巧 | 說明 |
-|------|------|
-| 遞迴 + 回溯 | 每一層遞迴處理一個選擇點 |
-| 合法性剪枝 | 在嘗試遞迴前檢查條件 |
-| 狀態回復 | 遞迴後撤銷操作（例如 `pop_back`, `used[i] = false`） |
-| 路徑記錄 | 用 `path` 或 `track` 記錄當前的選擇 |
+| 技巧      | 說明                                               |
+| ------- | ------------------------------------------------ |
+| 遞迴 + 回溯 | 每一層遞迴處理一個選擇點                                     |
+| 合法性剪枝   | 在嘗試遞迴前檢查條件                                       |
+| 狀態回復    | 遞迴後撤銷操作（例如 `pop_back`, `used[i] = false`，或恢復棋盤格） |
+| 路徑記錄    | 用 `path` 或 `track` 記錄當前的選擇                       |
+
+## 📋 常見題型對照表
 
 | 題型          | 要決定什麼？     | 遞迴參數包含什麼？                         | 特殊處理            |
 | ----------- | ---------- | --------------------------------- | --------------- |
@@ -166,3 +199,4 @@ void backtrack(vector<string>& board, int row, int n) {
 | 括號生成        | 加 ( 還是 )？  | 當前字串、剩下的左右括號數                     | `left <= right` |
 | N 皇后        | 每列放哪個 col？ | row、使用中的 cols/diag1/diag2         | 判斷衝突            |
 | 迷宮/網格       | 下一步走哪裡？    | i, j, 當前字串 index, visited\[]\[]   | DFS 方向與還原       |
+| 單詞搜尋        | 下一個字母在哪？   | row, col, index, board            | 記得恢復格子狀態        |
