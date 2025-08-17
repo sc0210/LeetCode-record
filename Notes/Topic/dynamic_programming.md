@@ -21,30 +21,39 @@
 5. **最終答案（Answer）**  
    `dp[n]` 或整個 dp 陣列中的最大值等，依問題而定。
 
----
+## 做法：
+
+- Top-Down = recursion + memoization.
+- Bottom-Up = iterative filling of DP table.
 
 ## ✅ 範例一：Maximum Subarray（最大子陣列和）
 
 ### 題目：
+
 給定一個整數陣列，找出具有最大和的連續子陣列。
 
 ### 思路：
+
 Kadane’s Algorithm。對每個位置 i，決定是否延續前一個子陣列，還是從 i 重新開始。
 
 ### 狀態定義：
+
 - `dp[i]` 表示「以第 i 個元素結尾」的最大子陣列和
 
 ### 狀態轉移方程：
+
 ```cpp
 dp[i] = max(nums[i], dp[i - 1] + nums[i])
 ```
 
 ### 初始條件：
+
 ```cpp
 dp[0] = nums[0]
 ```
 
 ### C++ 程式碼（簡化版本）：
+
 ```cpp
 int maxSubArray(vector<int>& nums) {
     int maxSum = nums[0];
@@ -62,23 +71,28 @@ int maxSubArray(vector<int>& nums) {
 ## ✅ 範例二：Climbing Stairs（爬樓梯）
 
 ### 題目：
+
 每次可以爬 1 或 2 階，問爬到第 n 階有幾種方式。
 
 ### 狀態定義：
+
 - `dp[i]` 表示爬到第 i 階的方法數
 
 ### 狀態轉移方程：
+
 ```cpp
 dp[i] = dp[i - 1] + dp[i - 2]
 ```
 
-### 初始條件：
+### 初始條件:
+
 ```cpp
 dp[0] = 1
 dp[1] = 1
 ```
 
 ### C++ 程式碼：
+
 ```cpp
 int climbStairs(int n) {
     if (n <= 1) return 1;
@@ -96,12 +110,15 @@ int climbStairs(int n) {
 ## ✅ 範例三：0/1 背包問題
 
 ### 題目：
+
 給定重量與價值陣列、總容量，找出最大可裝載價值。
 
 ### 狀態定義：
+
 - `dp[i][w]` 表示「前 i 個物品、容量為 w」的最大價值。
 
 ### 狀態轉移方程：
+
 ```cpp
 if (w >= weight[i])
     dp[i][w] = max(dp[i-1][w], dp[i-1][w - weight[i]] + value[i]);
