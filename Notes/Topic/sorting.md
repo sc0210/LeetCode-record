@@ -240,3 +240,7 @@ void radixsort(vector<int>& arr) {
 }
 
 ```
+
+## 參考資料
+
+1. [C++ std::sort 排序用法與範例完整介紹](https://shengyu7697.github.io/std-sort/)
