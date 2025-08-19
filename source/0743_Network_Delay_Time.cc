@@ -29,35 +29,41 @@ public:
         // pq: to get the minimal value for each edge
         std::priority_queue<pii, vector<pii>, std::greater<pii>> pq;
         pq.push({0, k});
+        // caution: format{weight, node}, pq will sort by first element (weight)
 
         while (!pq.empty()) {
-            auto [dis, node] = pq.top();
+            auto [d, node] = pq.top();
             pq.pop();
+
+            // lazy deletion (similar to decrease-key operation)
+            if (d > dist[node])
+                continue;
 
             // update nei_node (relax)
             for (auto &nei : adj[node]) {
-                auto [nei_node, weight] = nei;
+                auto [next, w] = nei;
                 // weight: node <-> nei_node
-                if (dist[node] + weight < dist[nei_node]) {
-                    dist[nei_node] = dist[node] + weight;
+                if (dist[node] + w < dist[next]) {
+                    dist[next] = dist[node] + w;
                     // add nei_node into pq for further calculation
-                    pq.push({dist[nei_node], nei_node});
+                    pq.push({dist[next], next});
                 }
             }
         }
 
-        int minTime = 0;
-        for (int i = 1; i <= n; i++) {
-            // if existed node cannot reach by the given node k
-            if (dist[i] == INT_MAX) {
-                return -1;
-            }
-            // update the minTime when get larger delay time
-            if (dist[i] > minTime) {
-                minTime = dist[i];
-            }
-        }
+        // int minTime = 0;
+        // for (int i = 1; i <= n; i++) {
+        //     // if existed node cannot reach by the given node k
+        //     if (dist[i] == INT_MAX) {
+        //         return -1;
+        //     }
+        //     // update the minTime when get larger delay time
+        //     if (dist[i] > minTime) {
+        //         minTime = dist[i];
+        //     }
+        // }
 
-        return minTime;
+        int minTime = *max_element(dist.begin() + 1, dist.end());
+        return minTime == INT_MAX ? -1 : minTime;
     }
 };

@@ -81,7 +81,7 @@ char kthCharacter(long long k, std::vector<int> &operations)
                 ans++;
             }
         }
-        cout << ans << " ";
+        // cout << ans << " ";
     }
 
     return ans;

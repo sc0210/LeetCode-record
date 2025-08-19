@@ -1,4 +1,6 @@
 /* 3304. Find the K-th Character in String Game I */
+#include <math.h>
+
 char kthCharacter(int k)
 {
     /*  a
