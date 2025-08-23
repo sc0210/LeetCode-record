@@ -934,5 +934,47 @@
       "Breadth-First Search",
       "Graph"
     ]
+  },
+  "137": {
+    "title": "Single Number II",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ]
+  },
+  "912": {
+    "title": "Sort an Array",
+    "level": "Medium",
+    "tags": [
+      "Array",
+      "Divide and Conquer",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Merge Sort",
+      "Bucket Sort",
+      "Radix Sort",
+      "Counting Sort"
+    ]
+  },
+  "190": {
+    "title": "Reverse Bits",
+    "level": "Easy",
+    "tags": [
+      "Divide and Conquer",
+      "Bit Manipulation"
+    ]
+  },
+  "268": {
+    "title": "Missing Number",
+    "level": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Binary Search",
+      "Bit Manipulation",
+      "Sorting"
+    ]
   }
 }

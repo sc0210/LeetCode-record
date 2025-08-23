@@ -40,7 +40,8 @@
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | M | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [[C++]](/source/0130_Surrounded_Regions.cc) | 
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | M | String, Dynamic Programming, Backtracking | [[C++]](/source/0131_Palindrome_Partitioning.cc) | 
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | M | Hash Table, Depth-First Search, Breadth-First Search, Graph | [[C++]](/source/0133_Clone_Graph.cc) | 
-| 136 | [Single Number](https://leetcode.com/problems/single-number/) | E | Array, Bit Manipulation | [[C++]](/source/0136_Single_Number.cc) | 
+| 136 | [Single Number](https://leetcode.com/problems/single-number/) | E | Array, Bit Manipulation | [[C]](/source/0136_Single_Number.c) [[C++]](/source/0136_Single_Number.cc) | 
+| 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | M | Array, Bit Manipulation | [[C++]](/source/0137_Single_Number_II.cc) | 
 | 139 | [Word Break](https://leetcode.com/problems/word-break/) | M | Array, Hash Table, String, Dynamic Programming, Trie, Memoization | [[C++]](/source/0139_Word_Break.cc) | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | E | Hash Table, Linked List, Two Pointers | [[C++]](/source/0141_Linked_List_Cycle.cc) | 
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | M | Linked List, Two Pointers, Stack, Recursion | [[C++]](/source/0143_Reorder_List.cc) | 
@@ -48,7 +49,8 @@
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | M | Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort | [[C]](/source/0148_Sort_List.c) [[C++]](/source/0148_Sort_List.cc) | 
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | M | Array, Dynamic Programming | [[C++]](/source/0152_Maximum_Product_Subarray.cc) | 
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | M | Array, Two Pointers, Binary Search | [[C++]](/source/0167_Two_Sum_II_Input_Array_is_Sorted.cc) | 
-| 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | E | Divide and Conquer, Bit Manipulation | [[C++]](/source/0191_Number_of_1_Bits.cc) | 
+| 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | E | Divide and Conquer, Bit Manipulation | [[C]](/source/0190_Reverse_Bits.c) [[C++]](/source/0190_Reverse_Bits.cc) | 
+| 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | E | Divide and Conquer, Bit Manipulation | [[C]](/source/0191_Number_of_1_Bits.c) [[C++]](/source/0191_Number_of_1_Bits.cc) | 
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | M | Array, Dynamic Programming | [[C++]](/source/0198_House_Robber.cc) | 
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | M | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [[C++]](/source/0199_Binary_Tree_Right_Side_View.cc) | 
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | M | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix | [[C++]](/source/0200_Number_of_Islands.cc) | 
@@ -67,11 +69,12 @@
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | M | Tree, Depth-First Search, Binary Search Tree, Binary Tree | [[C++]](/source/0235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cc) | 
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | E | Hash Table, String, Sorting | [[C++]](/source/0242_Valid_Anagram.cc) | 
 | 260 | [Single Number III](https://leetcode.com/problems/single-number-iii/) | M | Array, Bit Manipulation | [[C++]](/source/0260_Single_Number_III.cc) | 
+| 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | E | Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting | [[C]](/source/0268_Missing_Number.c) [[C++]](/source/0268_Missing_Number.cc) | 
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | E | Array, Two Pointers | [[C++]](/source/0283_Move_Zeroes.cc) | 
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | M | Array, Two Pointers, Binary Search, Bit Manipulation | [[C++]](/source/0287_Find_the_Duplicate_Number.cc) | 
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | H | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree | [[C++]](/source/0297_Serialize_and_Deserialize_Binary_Tree.cc) | 
-| 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | E | Dynamic Programming, Bit Manipulation | [[C++]](/source/0338_Counting_Bits.cc) | 
-| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | M | Math, Bit Manipulation | [[C++]](/source/0371_Sum_of_Two_Integers.cc) | 
+| 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | E | Dynamic Programming, Bit Manipulation | [[C]](/source/0338_Counting_Bits.c) [[C++]](/source/0338_Counting_Bits.cc) | 
+| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | M | Math, Bit Manipulation | [[C]](/source/0371_Sum_of_Two_Integers.c) [[C++]](/source/0371_Sum_of_Two_Integers.cc) | 
 | 417 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | M | Array, Depth-First Search, Breadth-First Search, Matrix | [[C++]](/source/0417_Pacific_Atlantic_Water_Flow.cc) | 
 | 424 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | M | Hash Table, String, Sliding Window | [[C++]](/source/0424_Longest_Repeating_Character_Replacement.cc) | 
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | E | Tree, Depth-First Search, Binary Tree | [[C++]](/source/0543_Diameter_of_Binary_Tree.cc) | 
@@ -86,6 +89,7 @@
 | 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | M | Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [[C++]](/source/0743_Network_Delay_Time.cc) | 
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | M | Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path | [[C++]](/source/0787_Cheapest_Flights_Within_K_Stops.cc) | 
 | 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | M | Backtracking, Depth-First Search, Breadth-First Search, Graph | [[C++]](/source/0797_All_Paths_From_Source_to_Target.cc) | 
+| 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | M | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Merge Sort, Bucket Sort, Radix Sort, Counting Sort | [[C++]](/source/0912_Sort_an_Array.cc) | 
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | M | Array, Breadth-First Search, Matrix | [[C++]](/source/0994_Rotting_Oranges.cc) | 
 | 1290 | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | E | Linked List, Math | [[C++]](/source/1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cc) | 
 | 1323 | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/) | E | Math, Greedy | [[C++]](/source/1323_Maximum_69_Number.cc) | 

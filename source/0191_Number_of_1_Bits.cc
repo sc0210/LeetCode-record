@@ -1,3 +1,5 @@
+/* 191. Number of 1 Bits */
+
 class Solution
 {
 public:
@@ -20,6 +22,6 @@ public:
         return res;
 
         // Method3: Built-in function
-        // return __builtin_popcount(n);
+        return __builtin_popcount(n);
     }
 };
