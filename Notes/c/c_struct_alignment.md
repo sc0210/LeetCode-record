@@ -1,4 +1,4 @@
-# 📘 C/C++ 結構體對齊與 Padding 筆記
+# 📘 C/C++ Structure 與 Union 對齊與 Padding 筆記
 
 ## ✅ 結構體對齊的基本原則
 
@@ -80,3 +80,50 @@ int main() {
 - 🔄 **padding 是為了讓下一個成員對齊，而非自己**
 - 📏 結構體的總大小，會向上補到最大對齊需求的倍數
 - ⚠ 過度使用 padding 可能浪費空間，可透過 **調整成員順序** 或 `#pragma pack` 優化
+
+## ✅ Union 的基本原則
+
+- union 的所有成員共用同一塊記憶體。
+- union 的大小 至少等於 最大成員的大小。
+- 編譯器會根據 最嚴格的對齊需求成員，可能額外插入 padding。
+- 使用 sizeof(unionName) 可直接得到 union 的實際大小。
+
+## 📌 範例：union Data
+```cpp
+#include <stdio.h>
+
+union Data {
+    char c;      // 1 byte
+    int i;       // 通常 4 bytes
+    double d;    // 通常 8 bytes
+};
+
+int main() {
+    printf("Size of union: %zu\n", sizeof(union Data));
+    printf("Size of char:  %zu\n", sizeof(char));
+    printf("Size of int:   %zu\n", sizeof(int));
+    printf("Size of double:%zu\n", sizeof(double));
+}
+```
+
+## 📊 分析
+
+``` bash
+char = 1 byte
+int = 4 bytes
+double = 8 bytes
+最大成員 = double (8 bytes)
+union 大小 = 8 bytes（可能更多，如果對齊需求更大）
+```
+
+## ❗ Union 常見誤解
+
+|誤解  |  正解  |
+| ----- | ----- |
+| union 的大小等於所有成員大小的總和 | ❌ 錯，union 的大小只取 最大成員大小 + alignment padding|
+|每個成員獨立存在於記憶體中| ❌ 錯，所有成員共用同一塊記憶體，寫入一個會覆蓋另一個
+
+## 📝 小結
+
+- struct：成員 獨立存放，總大小 = 各成員大小 + padding + 尾部對齊。
+- union：成員 共用記憶體，大小 = 最大成員大小（含 alignment padding）。
